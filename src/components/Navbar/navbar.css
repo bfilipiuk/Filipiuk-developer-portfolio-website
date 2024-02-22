@@ -1,4 +1,25 @@
-nav {
+.navbar {
+    position: fixed;
+    height: 70px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+    transition: color 1s ease, background-color 1s ease, border 1s ease, border-radius 1s ease, backdrop-filter 1s ease;
+
+    /* tlo pod przyciskami */
+    /* background-color: rgba(82, 82, 82, 0.3);
+    backdrop-filter: blur(7px);
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 5rem; */
+}
+
+.navbar-active {
     position: fixed;
     height: 70px;
     left: 50%;
@@ -11,6 +32,7 @@ nav {
     margin-bottom: 2rem;
 
     /* tlo pod przyciskami */
+    transition: color 1s ease, background-color 1s ease, border 1s ease, border-radius 1s ease, backdrop-filter 1s ease;
     background-color: rgba(82, 82, 82, 0.3);
     backdrop-filter: blur(7px);
     border: 1px solid rgb(70, 70, 70);

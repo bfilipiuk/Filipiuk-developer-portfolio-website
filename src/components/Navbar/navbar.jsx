@@ -3,7 +3,20 @@ import { Link } from 'react-scroll';
 import './navbar.css';
 
 const Navbar = () => {
+    const [navbar, setNavbar] = useState(false);
     const [activeLink, setActiveLink] = useState('start');
+
+    const backgroundAppear = () => {
+        console.log(window.scrollY);
+
+        if (window.scrollY > 70) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    }
+
+    window.addEventListener('scroll', backgroundAppear);
 
     const calculateTransform = () => {
         switch(activeLink) {
@@ -20,7 +33,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav>
+        <nav className={navbar ? 'navbar-active' : 'navbar'}>
             <div className="backgroundIndicator" style={{ transform: `translateX(${calculateTransform()})` }}></div>
             <ul>
                 <li><Link className={activeLink === 'start' ? 'active' : ''} to="start" spy={true} smooth={true} offset={-70} duration={500} onClick={() => handleClick('start')}>Start</Link></li>
