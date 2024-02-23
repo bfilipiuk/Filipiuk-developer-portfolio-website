@@ -1,6 +1,6 @@
 .navbar {
     position: fixed;
-    height: 70px;
+    height: 55px;
     left: 50%;
     transform: translate(-50%,0);
     width: 30%;
@@ -11,6 +11,7 @@
     margin-bottom: 2rem;
     border-radius: 5rem;
     transition: color 1s ease, background-color 1s ease, border 1s ease, border-radius 1s ease, backdrop-filter 1s ease;
+    z-index: 2;
 
     /* tlo pod przyciskami */
     /* background-color: rgba(82, 82, 82, 0.3);
@@ -21,7 +22,7 @@
 
 .navbar-active {
     position: fixed;
-    height: 70px;
+    height: 55px;
     left: 50%;
     transform: translate(-50%,0);
     width: 30%;
@@ -30,6 +31,7 @@
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    z-index: 2;
 
     /* tlo pod przyciskami */
     transition: color 1s ease, background-color 1s ease, border 1s ease, border-radius 1s ease, backdrop-filter 1s ease;
@@ -77,7 +79,7 @@ nav ul li a:hover, nav ul li a:focus {
 .backgroundIndicator {
     z-index: 1;
     position: absolute;
-    bottom: 13px;
+    bottom: 7px;
     width: 6rem;
     height: 2.5rem;
     background-color: rgba(105, 105, 105, 0.3);
