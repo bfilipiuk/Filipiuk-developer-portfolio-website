@@ -95,7 +95,85 @@ const Page = () => {
                   </div>
                   <div className="experience-header">Doświadczenie</div>
                   <div className="experience-freelance-container">
-                    
+                    <div className="freelance-dates">Kwiecień 2020 - Marzec 2024</div>
+                    <div className="freelance-info-container">
+                      <div className="freelance-header">Freelance - Graphic Designer</div>
+                      <div className="freelance-info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
+                        augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis,
+                        commodo ligula ut, auctor augue. Aliquam non mi sed nunc pellentesque pretium ut id purus.Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit augue ut, pretium facilisis arcu.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
+                        augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis.
+                      </div>
+                      <div className="freelance-skillset">
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="experience-freelance-container">
+                    <div className="freelance-dates">Kwiecień 2020 - Marzec 2024</div>
+                    <div className="freelance-info-container">
+                      <div className="freelance-header">Freelance - Graphic Designer</div>
+                      <div className="freelance-info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
+                        augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis,
+                        commodo ligula ut, auctor augue. Aliquam non mi sed nunc pellentesque pretium ut id purus.Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit augue ut, pretium facilisis arcu.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
+                        augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis.
+                      </div>
+                      <div className="freelance-skillset">
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="experience-freelance-container">
+                    <div className="freelance-dates">Kwiecień 2020 - Marzec 2024</div>
+                    <div className="freelance-info-container">
+                      <div className="freelance-header">Freelance - Graphic Designer</div>
+                      <div className="freelance-info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
+                        augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis,
+                        commodo ligula ut, auctor augue. Aliquam non mi sed nunc pellentesque pretium ut id purus.Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit augue ut, pretium facilisis arcu.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
+                        augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis.
+                      </div>
+                      <div className="freelance-skillset">
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
