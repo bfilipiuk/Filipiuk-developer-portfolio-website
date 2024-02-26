@@ -94,11 +94,11 @@ const Page = () => {
                     <span>React</span>
                   </div>
                   <div className="experience-header">Doświadczenie</div>
-                  <div className="experience-freelance-container">
-                    <div className="freelance-dates">Kwiecień 2020 - Marzec 2024</div>
-                    <div className="freelance-info-container">
-                      <div className="freelance-header">Freelance - Graphic Designer</div>
-                      <div className="freelance-info">
+                  <div className="experience-container">
+                    <div className="experience-dates">Kwiecień 2020 - Marzec 2024</div>
+                    <div className="experience-info-container">
+                      <div className="experience-title">Freelance - Graphic Designer</div>
+                      <div className="experience-info">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
                         augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis,
                         commodo ligula ut, auctor augue. Aliquam non mi sed nunc pellentesque pretium ut id purus.Lorem
@@ -106,7 +106,7 @@ const Page = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
                         augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis.
                       </div>
-                      <div className="freelance-skillset">
+                      <div className="experience-skillset">
                         <span>React</span>
                         <span>React</span>
                         <span>React</span>
@@ -121,11 +121,11 @@ const Page = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="experience-freelance-container">
-                    <div className="freelance-dates">Kwiecień 2020 - Marzec 2024</div>
-                    <div className="freelance-info-container">
-                      <div className="freelance-header">Freelance - Graphic Designer</div>
-                      <div className="freelance-info">
+                  <div className="experience-container">
+                    <div className="experience-dates">Kwiecień 2020 - Marzec 2024</div>
+                    <div className="experience-info-container">
+                      <div className="experience-title">Freelance - Graphic Designer</div>
+                      <div className="experience-info">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
                         augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis,
                         commodo ligula ut, auctor augue. Aliquam non mi sed nunc pellentesque pretium ut id purus.Lorem
@@ -133,7 +133,7 @@ const Page = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
                         augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis.
                       </div>
-                      <div className="freelance-skillset">
+                      <div className="experience-skillset">
                         <span>React</span>
                         <span>React</span>
                         <span>React</span>
@@ -148,11 +148,11 @@ const Page = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="experience-freelance-container">
-                    <div className="freelance-dates">Kwiecień 2020 - Marzec 2024</div>
-                    <div className="freelance-info-container">
-                      <div className="freelance-header">Freelance - Graphic Designer</div>
-                      <div className="freelance-info">
+                  <div className="experience-container">
+                    <div className="experience-dates">Kwiecień 2020 - Marzec 2024</div>
+                    <div className="experience-info-container">
+                      <div className="experience-title">Freelance - Graphic Designer</div>
+                      <div className="experience-info">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
                         augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis,
                         commodo ligula ut, auctor augue. Aliquam non mi sed nunc pellentesque pretium ut id purus.Lorem
@@ -160,7 +160,7 @@ const Page = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue lectus, lobortis hendrerit
                         augue ut, pretium facilisis arcu. Praesent sit amet viverra enim. Vestibulum quis justo sagittis.
                       </div>
-                      <div className="freelance-skillset">
+                      <div className="experience-skillset">
                         <span>React</span>
                         <span>React</span>
                         <span>React</span>
