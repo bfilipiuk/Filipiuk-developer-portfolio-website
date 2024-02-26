@@ -92,7 +92,10 @@ const Page = () => {
                     <span>React</span>
                     <span>React</span>
                     <span>React</span>
-
+                  </div>
+                  <div className="experience-header">Doświadczenie</div>
+                  <div className="experience-freelance-container">
+                    
                   </div>
                 </div>
               </div>

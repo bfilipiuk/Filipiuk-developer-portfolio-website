@@ -7,13 +7,12 @@
 }
 
 .header {
-    position: relative; /* Ważne: umożliwia pozycjonowanie pseudo-elementu względem tego kontenera */
+    position: relative;
     width: 100%;
     height: 700px;
     color: white;
     text-align: center;
     bottom: 10px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,8 +28,8 @@
     background-image: url('../assets/zorza.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.5; /* Przezroczystość tylko dla tła */
-    z-index: -1; /* Upewnia się, że tło znajduje się pod tekstem */
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .header-text-1 {
@@ -39,7 +38,6 @@
 
 .header-text-1, .header-text-2, .header-text-3 {
     width: 60%;
-    /* padding: 5px; */
     font-family: "Poppins", sans-serif;
     user-select: none;
 }
@@ -58,7 +56,6 @@
 
 .header-text-3 {
     padding: 30px;
-
     color: rgb(185, 185, 185);
     font-size: large;
 }
@@ -91,6 +88,7 @@
 
 .skillset-container span {
     display: inline-block;
+    user-select: none;
     color: #40cf8e;
     outline: 1px solid #40cf8e;
     border-radius: 5px;
@@ -100,14 +98,17 @@
     margin-top: 10px;
     background-image: linear-gradient(to right, #40cf8e 50%, rgb(10, 10, 10) 50%);
     background-size: 200% 100%;
-    background-position: right;
-    transition: background-position 0.5 ease;
+    background-position: 100%;
+    transition: background-position 0.5s ease, color 0.5s ease; /* Przenieś tutaj */
 }
 
 .skillset-container span:hover {
-    background-image: linear-gradient(to right, #40cf8e 50%, rgb(10, 10, 10) 50%);
-    background-position: left; /* Pozycja tła przy najechaniu (nowy kolor po lewej) */
-    background-size: 200% 100%;
+    background-position: 0%;
     color: black;
-    transition: background-position 0.5s ease;
+}
+
+.experience-header {
+    margin-top: 30px;
+    color: white;
+    font-size: x-large;
 }
