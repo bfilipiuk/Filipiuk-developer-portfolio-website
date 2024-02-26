@@ -90,5 +90,24 @@
 }
 
 .skillset-container span {
+    display: inline-block;
     color: #40cf8e;
+    outline: 1px solid #40cf8e;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #40cf8e 50%, rgb(10, 10, 10) 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5 ease;
+}
+
+.skillset-container span:hover {
+    background-image: linear-gradient(to right, #40cf8e 50%, rgb(10, 10, 10) 50%);
+    background-position: left; /* Pozycja tła przy najechaniu (nowy kolor po lewej) */
+    background-size: 200% 100%;
+    color: black;
+    transition: background-position 0.5s ease;
 }
