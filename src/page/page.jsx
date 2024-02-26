@@ -36,7 +36,7 @@ const Page = () => {
     return (
             <div>
               <Navbar />
-              <div className="main">
+              <div className="main" id="start">
                 <div className="header">
                   <div className="header-text-1">Bartek Filipiuk</div>
                   <div className="header-text-2">Developer Portfolio</div>
@@ -45,6 +45,54 @@ const Page = () => {
                     In augue lectus, lobortis hendrerit augue ut, pretium facilisis arcu. Praesent sit amet
                     viverra enim. Vestibulum quis justo sagittis, commodo ligula ut, auctor augue. Aliquam 
                     non mi sed nunc pellentesque pretium ut id purus.
+                  </div>
+                </div>
+                <div className="about" id="about">
+                  <div className="about-header">O mnie</div>
+                  <div className="about-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    In augue lectus, lobortis hendrerit augue ut, pretium facilisis arcu. Praesent sit amet
+                    viverra enim. Vestibulum quis justo sagittis, commodo ligula ut, auctor augue. Aliquam 
+                    non mi sed nunc pellentesque pretium ut id purus.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. In augue lectus, lobortis hendrerit augue ut, pretium facilisis arcu.
+                  </div>
+                  <div className="skillset-header">Umiejętności</div>
+                  <div className="skillset-container">
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+                    <span>React</span>
+
                   </div>
                 </div>
               </div>
