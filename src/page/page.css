@@ -159,7 +159,7 @@
 .experience-skillset {
     /* border: 1px solid white; */
     margin-top: 10px;
-    height: 50px;
+    height: auto;
     width: 1000px;
 }
 
@@ -182,4 +182,32 @@
 .experience-skillset span:hover {
     background-position: 0%;
     color: black;
+}
+
+.projects-header {
+    margin-top: 60px;
+    color: white;
+    font-size: x-large;
+}
+
+.projects-container {
+    border: 1px solid white;
+    height: 600px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects-container a {
+    display: inline-block;
+    border: 1px solid white;
+    width: 441px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    color: white;
+    font-size: 30px;
 }
