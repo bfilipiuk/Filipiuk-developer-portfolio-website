@@ -177,13 +177,14 @@ const Page = () => {
                   </div>
                   <div className="projects-header" id="projects">Projekty</div>
                   <div className="projects-container">
-                    <a>Projekt nazwa</a>
-                    <a>Projekt nazwa</a>
-                    <a>Projekt nazwa</a>
-                    <a>Projekt nazwa</a>
-                    <a>Projekt nazwa</a>
-                    <a>Projekt nazwa</a>
-
+                    <a className="project">
+                      <span className="project-title">Weather app</span>
+                      <div className="project-skillset">
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
