@@ -187,6 +187,46 @@ const Page = () => {
                         <span>React</span>
                       </div>
                     </a>
+                    <a className="project">
+                      <span className="project-title">Weather app</span>
+                      <div className="project-skillset">
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                      </div>
+                    </a>
+                    <a className="project">
+                      <span className="project-title">Weather app</span>
+                      <div className="project-skillset">
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                      </div>
+                    </a>
+                    <a className="project">
+                      <span className="project-title">Weather app</span>
+                      <div className="project-skillset">
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                      </div>
+                    </a>
+                    <a className="project">
+                      <span className="project-title">Weather app</span>
+                      <div className="project-skillset">
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                      </div>
+                    </a>
+                    <a className="project">
+                      <span className="project-title">Weather app</span>
+                      <div className="project-skillset">
+                        <span>React</span>
+                        <span>React</span>
+                        <span>React</span>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>

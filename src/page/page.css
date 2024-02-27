@@ -61,7 +61,7 @@
 }
 
 .about {
-    width: 60%;
+    width: 70%;
     text-align: left;
 }
 
@@ -185,8 +185,9 @@
 }
 
 .projects {
-    width: 60%;
-    text-align: left;
+    width: 70%;
+    /* text-align: left; */
+    align-items: start;
 }
 
 .projects-header {
@@ -197,20 +198,21 @@
 
 .projects-container {
     /* border: 1px solid white; */
-    height: 600px;
+    height: auto;
+    margin-top: 30px;
     
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    /* flex-direction: row; */
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .project {
-    display: inline-block;
-    border: 1px solid white;
-    width: 441px;
+    width: 412px;
     height: 250px;
 
-    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     color: white;
     font-size: 30px;
     display: flex;
@@ -230,6 +232,8 @@
     /* border: 1px solid rgb(197, 0, 0); */
     background-position: 60% 100%;
     border: 1px solid rgb(133, 133, 133);
+    /* transition: border 0.7s ease-in-out; */
+
 }
 
 .project-title {
