@@ -61,7 +61,7 @@
 }
 
 .about {
-    width: 70%;
+    width: 60%;
     text-align: left;
 }
 
@@ -184,6 +184,11 @@
     color: black;
 }
 
+.projects {
+    width: 60%;
+    text-align: left;
+}
+
 .projects-header {
     margin-top: 60px;
     color: white;
@@ -211,17 +216,20 @@
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(1px);
-    background-image: linear-gradient(to bottom left, rgba(75, 75, 75, 1), rgba(75, 75, 75, 0));
+    background-image: linear-gradient(to bottom left, rgb(95, 95, 95), rgba(75, 75, 75, 0));
+    background-size: 200% 200%;
+    background-position: bottom left;
     border: 1px solid rgb(70, 70, 70);
     border-radius: 15px;
     justify-content: center;
-    transition: border 1s ease-in-out;
-    transition: background-image 1s ease-in-out;
+    transition: background-position 0.7s ease-in-out;
 }
 
 .project:hover {
     /* background-image: linear-gradient(to bottom left, rgba(97, 97, 97, 0.5), rgba(75, 75, 75, 0) 85%); */
     /* border: 1px solid rgb(197, 0, 0); */
+    background-position: 60% 100%;
+    border: 1px solid rgb(133, 133, 133);
 }
 
 .project-title {

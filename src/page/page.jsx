@@ -175,6 +175,8 @@ const Page = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className="projects" id="projects">
                   <div className="projects-header" id="projects">Projekty</div>
                   <div className="projects-container">
                     <a className="project">
