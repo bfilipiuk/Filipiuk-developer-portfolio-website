@@ -118,18 +118,14 @@
 
 .experience-container {
     margin-top: 10px;
-
-    /* border: 1px solid white; */
-    height: 300px;
-    
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
+    /* Usunięto wysokość, aby kontener mógł dostosować się do zawartości */
 }
 
 .experience-dates {
-    /* border: 1px solid white; */
-    width: 300px;
-
+    flex-basis: 20%; /* Ustawia bazową szerokość na 300px */
     color: rgb(185, 185, 185);
     font-size: large;
 }
@@ -137,6 +133,10 @@
 .experience-info-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1; /* Pozwala elementowi rozciągać się, aby zająć dostępną przestrzeń */
+    flex-basis: 0; /* Ustawia bazową szerokość na 0%, co pozwala flex-grow działać od początku */
+    max-width: 80%; /* Ogranicza maksymalną szerokość do 70% kontenera nadrzędnego */
 }
 
 .experience-title {
@@ -153,7 +153,7 @@
     /* border: 1px solid white; */
     margin-top: 10px;
     height: auto;
-    width: 800px;
+    /* width: 800px; */
 
     color: rgb(185, 185, 185);
     font-size: large;
@@ -215,7 +215,7 @@
 .project {
     width: 412px;
     height: 250px;
-
+    background: transparent;
     margin-right: 30px;
     margin-bottom: 30px;
     color: white;
@@ -250,7 +250,7 @@
     /* text-align: center; */
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    margin-bottom: 10;
+    margin-bottom: 10px;
     /* margin-top: 40px; */
 }
 

@@ -180,54 +180,14 @@ const Page = () => {
                 <div className="projects" id="projects">
                   <div className="projects-header" id="projects">Projekty</div>
                   <div className="projects-container">
-                    <a className="project">
+                    <button className="project">
                       <span className="project-title">Weather app</span>
                       <div className="project-skillset">
                         <span>React</span>
                         <span>React</span>
                         <span>React</span>
                       </div>
-                    </a>
-                    <a className="project">
-                      <span className="project-title">Weather app</span>
-                      <div className="project-skillset">
-                        <span>React</span>
-                        <span>React</span>
-                        <span>React</span>
-                      </div>
-                    </a>
-                    <a className="project">
-                      <span className="project-title">Weather app</span>
-                      <div className="project-skillset">
-                        <span>React</span>
-                        <span>React</span>
-                        <span>React</span>
-                      </div>
-                    </a>
-                    <a className="project">
-                      <span className="project-title">Weather app</span>
-                      <div className="project-skillset">
-                        <span>React</span>
-                        <span>React</span>
-                        <span>React</span>
-                      </div>
-                    </a>
-                    <a className="project">
-                      <span className="project-title">Weather app</span>
-                      <div className="project-skillset">
-                        <span>React</span>
-                        <span>React</span>
-                        <span>React</span>
-                      </div>
-                    </a>
-                    <a className="project">
-                      <span className="project-title">Weather app</span>
-                      <div className="project-skillset">
-                        <span>React</span>
-                        <span>React</span>
-                        <span>React</span>
-                      </div>
-                    </a>
+                    </button>
                   </div>
                 </div>
            </div>
