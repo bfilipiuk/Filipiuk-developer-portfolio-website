@@ -9,7 +9,7 @@ const BackgroundStars = () => {
         const ctx = canvas.getContext('2d');
 
         canvas.width = window.innerWidth - 20;
-        canvas.height = window.innerHeight + 2000;
+        canvas.height = window.innerHeight + 2200;
 
         const stars_quantity = 100;
         for (let i = 0; i < stars_quantity; i++) {
