@@ -2,12 +2,19 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Loader from '../components/Loader/loader';
 import Navbar from "../components/Navbar/navbar";
+import '../components/Modals/twoLinksModal'
 import './page.css'
+import TwoLinksModal from "../components/Modals/twoLinksModal";
 
 const Page = () => {
     const [loading, setLoading] = useState(true);
     const [progress, setProgress] = useState(0);
-    const [fadeOut, setFadeOut] = useState(false); // New state to control fade-out
+
+    const [modal, setModal] = useState(false);
+    const toggleModal = () => {
+      setModal(!modal);
+      console.log(modal);
+    }
 
     useEffect(() => {
         const timer = setTimeout(() => setLoading(false), 3000);
@@ -30,7 +37,7 @@ const Page = () => {
     }, []);
     
     if (loading) {
-        return <Loader progress={progress} className={fadeOut ? 'fade-out' : ''} />;
+        return <Loader progress={progress}/>;
     }
 
     return (
@@ -180,7 +187,7 @@ const Page = () => {
                 <div className="projects" id="projects">
                   <div className="projects-header" id="projects">Projekty</div>
                   <div className="projects-container">
-                    <button className="project">
+                    <button className="project" onClick={toggleModal}>
                       <span className="project-title">Weather app</span>
                       <div className="project-skillset">
                         <span>React</span>
