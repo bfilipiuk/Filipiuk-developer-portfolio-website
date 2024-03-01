@@ -47,15 +47,16 @@ const Page = () => {
                     non mi sed nunc pellentesque pretium ut id purus.
                   </div>
                 </div>
-                <div className="about" id="about">
-                  <div className="about-header">O mnie</div>
-                  <div className="about-text">
+              </div>
+              <div className="about" id="about">
+                <div className="about-header">O mnie</div>
+                <div className="about-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     In augue lectus, lobortis hendrerit augue ut, pretium facilisis arcu. Praesent sit amet
                     viverra enim. Vestibulum quis justo sagittis, commodo ligula ut, auctor augue. Aliquam 
                     non mi sed nunc pellentesque pretium ut id purus.Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. In augue lectus, lobortis hendrerit augue ut, pretium facilisis arcu.
-                  </div>
+                </div>
                   <div className="skillset-header">Umiejętności</div>
                   <div className="skillset-container">
                     <span>React</span>
@@ -229,7 +230,6 @@ const Page = () => {
                     </a>
                   </div>
                 </div>
-              </div>
            </div>
     );
 }
