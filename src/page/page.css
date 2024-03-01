@@ -189,10 +189,10 @@
 
 .projects {
     width: 70%;
-    margin: 0 auto; /* Centruje kontener w poziomie */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Wyrównuje elementy do lewej strony */
+    align-items: flex-start;
 }
 
 .projects-header {
@@ -202,12 +202,9 @@
 }
 
 .projects-container {
-    /* border: 1px solid white; */
     height: auto;
     margin-top: 30px;
-    
     display: inline-flex;
-    /* flex-direction: row; */
     flex-wrap: wrap;
     align-items: center;
 }
@@ -222,48 +219,41 @@
     font-size: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    position: relative;
     backdrop-filter: blur(1px);
     background-image: linear-gradient(to bottom left, rgb(95, 95, 95), rgba(75, 75, 75, 0));
     background-size: 250% 250%;
     background-position: bottom left;
     border: 1px solid rgb(70, 70, 70);
     border-radius: 15px;
-    justify-content: center;
     transition: background-position 0.7s ease-in-out;
 }
 
 .project:hover {
-    /* background-image: linear-gradient(to bottom left, rgba(97, 97, 97, 0.5), rgba(75, 75, 75, 0) 85%); */
-    /* border: 1px solid rgb(197, 0, 0); */
     background-position: 30% 100%;
     border: 1px solid rgb(133, 133, 133);
-    /* transition: border 0.7s ease-in-out; */
 
 }
 
-
+.project-title-skillset-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 15px;
+}
 
 .project-title {
-    /* position: absolute; */
-    /* text-align: center; */
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    margin-bottom: 10px;
-    /* margin-top: 40px; */
+    font-weight: 400;
+    text-align: center;
+    /* top: 45%; */
 }
 
 .project-skillset {
-    position: absolute;
-    top: 60%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
     flex-wrap: wrap;
-    /* margin-top: 15px; */
 }
 
 .project-skillset span {
@@ -285,4 +275,49 @@
 .project-skillset span:hover {
     background-position: 0%;
     color: black;
+}
+
+.test {
+    visibility: hidden;
+}
+
+.project-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 18px;
+    margin-right: 18px;
+    height: 8%;
+    gap: 18px;
+}
+
+.project-icon-container a {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.link-icon, .git-icon {
+    fill: rgb(255, 255, 255);
+    height: 100%;
+    width: auto;
+    transition: fill 0.5s ease;
+}
+
+.link-icon:hover, .git-icon:hover {
+    fill: #40cf8e;
+}
+
+.contact {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-header {
+    margin-top: 60px;
+    color: white;
+    font-size: x-large;
 }
