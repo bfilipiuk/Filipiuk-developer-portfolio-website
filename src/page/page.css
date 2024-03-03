@@ -297,14 +297,14 @@
     display: inline-flex;
 }
 
-.link-icon, .git-icon {
+.link-icon, .git-icon, .linkedin-icon {
     fill: rgb(255, 255, 255);
     height: 100%;
     width: auto;
     transition: fill 0.5s ease;
 }
 
-.link-icon:hover, .git-icon:hover {
+.link-icon:hover, .git-icon:hover, .linkedin-icon:hover {
     fill: #40cf8e;
 }
 
@@ -320,4 +320,36 @@
     margin-top: 60px;
     color: white;
     font-size: x-large;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: large;
+    font-weight: 300;
+}
+
+.contact-info span {
+    color: white;
+    transition: color 0.5s ease-in-out;
+}
+
+.contact-info span:hover {
+    color: #40cf8e;
+}
+
+.contact-info-icons {
+    display: flex;
+    gap: 15px;
+    height: 35px;
+    margin-top: 10px;
 }

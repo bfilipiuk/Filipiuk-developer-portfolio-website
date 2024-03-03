@@ -3,8 +3,10 @@ import { useState, useEffect } from "react";
 import Loader from '../components/Loader/loader';
 import Navbar from "../components/Navbar/navbar";
 import '../components/Modals/twoLinksModal'
+import ContactForm from "../components/ContactForm/contactform";
 import { ReactComponent as LinkIcon } from '../assets/linkicon.svg';
 import { ReactComponent as GitIcon} from '../assets/githubicon.svg';
+import { ReactComponent as LinkedinIcon } from '../assets/LinkedIn_icon.svg';
 import './page.css'
 
 const Page = () => {
@@ -276,6 +278,19 @@ const Page = () => {
                 </div>
                 <div className="contact">
                   <div className="contact-header">Kontakt</div>
+                  <div className="contact-container">
+                    <div className="contact-info">
+                      <span>bartek.filipiuk02@gmail.com</span>
+                      <span>+48 882 607 006</span>
+                      <span>email@gmail.com</span>
+                      <span>email@gmail.com</span>
+                      <div className="contact-info-icons">
+                        <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkedinIcon className="linkedin-icon" /></a>
+                        <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
+                      </div>
+                    </div>
+                    <ContactForm />
+                  </div>
                 </div>
            </div>
     );
