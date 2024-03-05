@@ -45,13 +45,13 @@
 .header-text-1 {
     color: white;
     font-size: 4.5rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .header-text-2 {
     color: #40cf8e;
     font-size: 4.5rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .header-text-3 {
@@ -326,8 +326,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 10px;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .contact-info {
