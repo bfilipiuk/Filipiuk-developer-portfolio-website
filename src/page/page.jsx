@@ -8,6 +8,12 @@ import { ReactComponent as LinkIcon } from '../assets/linkicon.svg';
 import { ReactComponent as GitIcon} from '../assets/githubicon.svg';
 import { ReactComponent as LinkedinIcon } from '../assets/LinkedIn_icon.svg';
 import './page.css'
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 const Page = () => {
     const [loading, setLoading] = useState(true);
@@ -18,6 +24,20 @@ const Page = () => {
       setModal(!modal);
       console.log(modal);
     }
+
+    const [snackbarOpen, setSnackbarOpen] = useState(false);
+    const [snackbarMessage, setSnackbarMessage] = useState('');
+    const [snackbarSeverity, setSnackbarSeverity] = useState('success'); // success, error, warning, info
+
+    const handleSnackbarClose = () => {
+      setSnackbarOpen(false);
+    };
+
+    const handleFormAlert = (message, severity) => {
+      setSnackbarMessage(message);
+      setSnackbarSeverity(severity);
+      setSnackbarOpen(true);
+    };
 
     useEffect(() => {
         const timer = setTimeout(() => setLoading(false), 3000);
@@ -289,7 +309,12 @@ const Page = () => {
                         <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
                       </div>
                     </div>
-                    <ContactForm />
+                    <ContactForm onFormAlert={handleFormAlert} />
+                    <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'center'}} open={snackbarOpen} autoHideDuration={6000} onClose={handleSnackbarClose}>
+                      <Alert onClose={handleSnackbarClose} severity={snackbarSeverity}>
+                        {snackbarMessage}
+                      </Alert>
+                    </Snackbar>
                   </div>
                 </div>
            </div>

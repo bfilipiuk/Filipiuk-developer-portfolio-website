@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 import Alert from '@mui/material/Alert';
 import './contactform.css';
 
-const ContactForm = () => {
+const ContactForm = ({ onFormAlert }) => {
     const [formData, setFormData] = useState({
         name: '',
         subject: '',
@@ -12,8 +12,6 @@ const ContactForm = () => {
     });
     const [errors, setErrors] = useState({});
     const [resize, setResize] = useState('0');
-    const [showAlert, setShowAlert] = useState(false);
-    const [showAlertFailure, setShowAlertFailure] = useState(false);
 
     const validateForm = () => {
         let formIsValid = true;
@@ -61,16 +59,14 @@ const ContactForm = () => {
             emailjs.sendForm('service_v09nzim', 'template_73q9k6o', e.target, '6-5mL-MhiwnqTkug9').then((result) =>
             {
                 console.log('Email sent via contact form: ', result.text);
-                setShowAlert(true);
-                setTimeout(() => setShowAlert(false), 5000);
                 setFormData({name: '', subject: '', email: '', message: ''});
+
+                onFormAlert('Wiadomość wysłana pomyślnie!', 'success')
             }, (error) => {
                 console.log('Failed to send email: ', error.text);
-                alert('nie wyslano');
             });
         } else {
-            setShowAlertFailure(true);
-            setTimeout(() => setShowAlertFailure(false), 5000);
+            onFormAlert('Wiadomość nie wysłana, sprawdź wprowadzone dane', 'error')
         }
     };
 
