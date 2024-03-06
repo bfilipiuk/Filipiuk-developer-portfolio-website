@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import emailjs from 'emailjs-com';
 import './contactform.css';
 
@@ -9,9 +8,40 @@ const ContactForm = () => {
         subject: '',
         email: '',
         message: ''
-      });
-
+    });
+    const [errors, setErrors] = useState({});
     const [resize, setResize] = useState('0');
+
+    const validateForm = () => {
+        let formIsValid = true;
+        let errors = {};
+
+        if (!formData.name) {
+            errors.name = 'Imię jest wymagane.';
+            formIsValid = false;
+        }
+
+        if (!formData.subject) {
+            errors.subject = 'Temat jest wymagany.';
+            formIsValid = false;
+        }
+
+        if (!formData.email) {
+            errors.email = 'Email jest wymagany.';
+            formIsValid = false;
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            errors.email = 'Podany email jest nieprawidłowy.';
+            formIsValid = false;
+        }
+
+        if (!formData.message) {
+            errors.message = 'Wiadomość jest wymagana.';
+            formIsValid = false;
+        }
+
+        setErrors(errors);
+        return formIsValid;
+    };
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -24,12 +54,15 @@ const ContactForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_v09nzim', 'template_73q9k6o', e.target, '6-5mL-MhiwnqTkug9').then((result) =>
-        {
-            console.log('Email sent via contact form: ', result.text);
-        }, (error) => {
-            console.log('Failed to send email: ', error.text);
-        });
+        if (validateForm()) {
+            emailjs.sendForm('service_v09nzim', 'template_73q9k6o', e.target, '6-5mL-MhiwnqTkug9').then((result) =>
+            {
+                console.log('Email sent via contact form: ', result.text);
+                // Możesz tutaj dodać logikę czyszczenia formularza lub wyświetlenia komunikatu o sukcesie
+            }, (error) => {
+                console.log('Failed to send email: ', error.text);
+            });
+        }
     };
 
     return (
@@ -44,6 +77,9 @@ const ContactForm = () => {
                 onChange={handleChange}
                 placeholder="Imię: "
             />
+            <div className="error-container">
+                <div key={errors.name} className="error">{errors.name}</div>
+            </div>
             <input
                 className="form-input"
                 type="text"
@@ -53,7 +89,9 @@ const ContactForm = () => {
                 onChange={handleChange}
                 placeholder="Temat: "
             />
-            <input
+            <div className="error-container">
+                <div key={errors.subject} className="error">{errors.subject}</div>
+            </div>            <input
                 className="form-input"
                 type="text"
                 id="email"
@@ -61,16 +99,20 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Email: "
-            />
-            <textarea
+            /> 
+            <div className="error-container">
+                <div key={errors.email} className="error">{errors.email}</div>
+            </div>            <textarea
                 className="form-text-area"
-                type="text"
                 id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Wiadomość: "
-            /> 
+            />
+            <div className="error-container">
+                <div key={errors.message} className="error">{errors.message}</div>
+            </div>
             <button
                 onClick={() => setResize('1')}
                 onAnimationEnd={() => setResize('0')}
@@ -82,7 +124,7 @@ const ContactForm = () => {
                     Wyślij wiadomość
             </button>
         </form>
-    )
+    );
 }
 
 export default ContactForm;
