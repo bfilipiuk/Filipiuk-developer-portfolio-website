@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
+import Alert from '@mui/material/Alert';
 import './contactform.css';
 
 const ContactForm = () => {
@@ -11,6 +12,8 @@ const ContactForm = () => {
     });
     const [errors, setErrors] = useState({});
     const [resize, setResize] = useState('0');
+    const [showAlert, setShowAlert] = useState(false);
+    const [showAlertFailure, setShowAlertFailure] = useState(false);
 
     const validateForm = () => {
         let formIsValid = true;
@@ -58,10 +61,16 @@ const ContactForm = () => {
             emailjs.sendForm('service_v09nzim', 'template_73q9k6o', e.target, '6-5mL-MhiwnqTkug9').then((result) =>
             {
                 console.log('Email sent via contact form: ', result.text);
-                // Możesz tutaj dodać logikę czyszczenia formularza lub wyświetlenia komunikatu o sukcesie
+                setShowAlert(true);
+                setTimeout(() => setShowAlert(false), 5000);
+                setFormData({name: '', subject: '', email: '', message: ''});
             }, (error) => {
                 console.log('Failed to send email: ', error.text);
+                alert('nie wyslano');
             });
+        } else {
+            setShowAlertFailure(true);
+            setTimeout(() => setShowAlertFailure(false), 5000);
         }
     };
 
