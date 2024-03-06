@@ -30,6 +30,7 @@
     border-radius: 150px;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: 'Segoe UI', sans-serif;
     font-size: 20px;
     font-weight: 100;
     outline-style: none;
@@ -62,6 +63,7 @@
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: 'Segoe UI', sans-serif;
     font-size: 20px;
     font-weight: 100;
     outline-style: none;
@@ -73,9 +75,52 @@
     transition: border 0.3s ease-in-out;
 }
 
+.form-text-area:focus {
+    border: 1px solid rgb(156, 156, 156);
+}
+
 .form-text-area::placeholder {
     font-size: 20px;
     font-weight: 100;
     top: 5px;
     color: rgb(187, 187, 187);
 }
+
+.submit-btn {
+    user-select: none;
+    color: #40cf8e;
+    outline-style: none;
+    border: none;
+    outline: 1px solid #40cf8e;
+    border-radius: 150px;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #40cf8e 50%, rgb(32, 32, 32) 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    /* padding: 20px; */
+    width: 83%;
+    height: 50px;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-position: 0%;
+    color: black;
+    cursor: pointer;
+}
+
+.submit-btn[resize='1'] {
+    animation: resize 0.6s;
+}
+
+@keyframes resize {
+    50% {
+        transform: scale(95%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
