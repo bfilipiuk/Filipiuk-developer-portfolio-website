@@ -1,0 +1,31 @@
+.footer {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    height: 40px;
+    width: 100%;
+    margin-top: 80px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.date {
+    margin-left: 20px;
+    color: #40cf8e;
+}
+
+.footer-text {
+    color: #40cf8e;
+}
+
+.footer-icons {
+    color: #40cf8e;
+    margin-right: 20px;
+}

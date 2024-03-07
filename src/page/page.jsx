@@ -10,6 +10,7 @@ import { ReactComponent as LinkedinIcon } from '../assets/LinkedIn_icon.svg';
 import './page.css'
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
+import Footer from "../components/Footer/footer";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -315,6 +316,7 @@ const Page = () => {
                     </div>
                   </div>
                 </div>
+                <Footer />
            </div>
     );
 }
