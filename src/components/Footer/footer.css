@@ -17,7 +17,7 @@
 }
 
 .date {
-    margin-left: 20px;
+    margin-left: 150px;
     color: #40cf8e;
 }
 
@@ -26,6 +26,22 @@
 }
 
 .footer-icons {
-    color: #40cf8e;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 150px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons a {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.footer-linkedin-icon, .footer-git-icon {
+    fill: #40cf8e;
+    height: 20px;
+    width: auto;
 }

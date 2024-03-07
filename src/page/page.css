@@ -176,7 +176,7 @@
     padding: 5px;
     margin-right: 10px;
     margin-top: 10px;
-    background-image: linear-gradient(to right, #40cf8e 50%, rgb(10, 10, 10) 50%);
+    background-image: linear-gradient(to right, #40cf8e 50%, rgba(32, 32, 32, 0.0) 50%);
     background-size: 200% 100%;
     background-position: 100%;
     transition: background-position 0.5s ease, color 0.5s ease;
@@ -266,7 +266,7 @@
     padding: 5px;
     margin-right: 10px;
     margin-top: 10px;
-    background-image: linear-gradient(to right, #40cf8e 50%, rgb(32, 32, 32) 50%);
+    background-image: linear-gradient(to right, #40cf8e 50%, rgba(32, 32, 32, 0.0) 50%);
     background-size: 200% 100%;
     background-position: 100%;
     transition: background-position 0.5s ease, color 0.5s ease;
