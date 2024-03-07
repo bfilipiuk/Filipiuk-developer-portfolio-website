@@ -299,22 +299,20 @@ const Page = () => {
                 <div className="contact">
                   <div className="contact-header">Kontakt</div>
                   <div className="contact-container">
-                    <div className="contact-info">
-                      <span>bartek.filipiuk02@gmail.com</span>
-                      <span>+48 882 607 006</span>
-                      <span>email@gmail.com</span>
-                      <span>email@gmail.com</span>
-                      <div className="contact-info-icons">
-                        <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkedinIcon className="linkedin-icon" /></a>
-                        <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
-                      </div>
-                    </div>
                     <ContactForm onFormAlert={handleFormAlert} />
                     <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'center'}} open={snackbarOpen} autoHideDuration={6000} onClose={handleSnackbarClose}>
                       <Alert onClose={handleSnackbarClose} severity={snackbarSeverity}>
                         {snackbarMessage}
                       </Alert>
                     </Snackbar>
+                    <div className="contact-info">
+                      <span>bartek.filipiuk02@gmail.com</span>
+                      <span>+48 882 607 006</span>
+                      <div className="contact-info-icons">
+                        <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkedinIcon className="linkedin-icon" /></a>
+                        <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
            </div>

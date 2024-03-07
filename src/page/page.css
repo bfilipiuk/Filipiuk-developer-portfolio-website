@@ -61,7 +61,7 @@
 }
 
 .about {
-    width: 70%;
+    width: 1100px;
     margin: 0 auto; /* Centruje kontener w poziomie */
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@
 }
 
 .projects {
-    width: 70%;
+    width: 1100px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -210,8 +210,8 @@
 }
 
 .project {
-    width: 412px;
-    height: 250px;
+    width: 334px;
+    height: 220px;
     background: transparent;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -238,7 +238,7 @@
 .project-title-skillset-container {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 43px;
     gap: 15px;
 }
 
@@ -287,7 +287,7 @@
     justify-content: flex-end;
     margin-top: 18px;
     margin-right: 18px;
-    height: 8%;
+    height: 10%;
     gap: 18px;
 }
 
@@ -309,7 +309,7 @@
 }
 
 .contact {
-    width: 70%;
+    width: 1100px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -328,16 +328,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10px;
-    /* gap: 30px; */
+    margin-top: 30px;
+    gap: 30px;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: large;
+    font-size: larger;
     font-weight: 300;
+    text-align: right;
+    /* margin-right: ; */
 }
 
 .contact-info span {
@@ -354,4 +356,6 @@
     gap: 15px;
     height: 35px;
     margin-top: 10px;
+    /* align-items: flex-; */
+    justify-content: end;
 }
