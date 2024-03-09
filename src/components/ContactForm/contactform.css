@@ -86,6 +86,13 @@
     color: rgb(187, 187, 187);
 }
 
+.name-surname-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 .submit-btn {
     user-select: none;
     color: #40cf8e;

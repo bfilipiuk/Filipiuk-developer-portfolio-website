@@ -73,30 +73,37 @@ const ContactForm = ({ onFormAlert }) => {
     return (
         <form className="contact-form" onSubmit={handleSubmit}>
             <div className="contact-form-header">Skontakuj się ze mną</div>
-            <input
-                className="form-input"
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Imię: "
-            />
-            <div className="error-container">
-                <div key={errors.name} className="error">{errors.name}</div>
+            <div className="name-surname-container">
+                <div className="name-container">
+                    <input
+                        className="form-input"
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Imię: "
+                    />
+                    <div className="error-container">
+                        <div key={errors.name} className="error">{errors.name}</div>
+                    </div>
+                </div>
+                <div className="surname-container">
+                    <input
+                        className="form-input"
+                        type="text"
+                        id="surname"
+                        name="surname"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        placeholder="Nazwisko: "
+                    />
+                    <div className="error-container">
+                        <div key={errors.subject} className="error">{errors.subject}</div>
+                    </div>
+                </div>
             </div>
             <input
-                className="form-input"
-                type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                placeholder="Temat: "
-            />
-            <div className="error-container">
-                <div key={errors.subject} className="error">{errors.subject}</div>
-            </div>            <input
                 className="form-input"
                 type="text"
                 id="email"
