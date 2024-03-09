@@ -207,14 +207,15 @@
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 25px;
 }
 
 .project {
-    width: 334px;
+    width: 348px;
     height: 220px;
     background: transparent;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    /* margin-right: 25px;
+    margin-bottom: 25px; */
     color: white;
     font-size: 30px;
     display: flex;
@@ -324,9 +325,9 @@
 
 .contact-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 100%;
     margin-top: 30px;
     gap: 30px;
@@ -338,7 +339,7 @@
     gap: 10px;
     font-size: larger;
     font-weight: 300;
-    text-align: right;
+    text-align: left;
     /* margin-right: ; */
 }
 
@@ -357,5 +358,5 @@
     height: 35px;
     margin-top: 10px;
     /* align-items: flex-; */
-    justify-content: end;
+    justify-content: start;
 }
