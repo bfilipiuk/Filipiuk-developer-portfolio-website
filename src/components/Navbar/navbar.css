@@ -3,14 +3,14 @@
     height: 55px;
     left: 50%;
     transform: translate(-50%,0);
-    width: 30%;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 5rem;
-    transition: color 1s ease, background-color 1s ease, border 1s ease, border-radius 1s ease, backdrop-filter 1s ease;
+    transition: color 1s ease, background-color 1s ease, border 1s ease, border-radius 1s ease, backdrop-filter 1s ease, border 1s ease;
     z-index: 2;
 
     /* tlo pod przyciskami */
@@ -25,7 +25,7 @@
     height: 55px;
     left: 50%;
     transform: translate(-50%,0);
-    width: 30%;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@
     z-index: 2;
 
     /* tlo pod przyciskami */
-    transition: color 1s ease, background-color 1s ease, border 1s ease, border-radius 1s ease, backdrop-filter 1s ease;
+    transition: color 1s ease, background-color 1s ease, border 1s ease, border-radius 1s ease, backdrop-filter 1s ease, border 1s ease;
     background-color: rgba(82, 82, 82, 0.3);
     backdrop-filter: blur(5px);
     border: 1px solid rgb(70, 70, 70);
