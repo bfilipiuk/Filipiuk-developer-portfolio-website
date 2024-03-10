@@ -298,14 +298,18 @@
     display: inline-flex;
 }
 
-.link-icon, .git-icon, .linkedin-icon {
+.link-icon, .git-icon, .linkedin-icon, .behance-icon {
     fill: rgb(255, 255, 255);
     height: 100%;
     width: auto;
     transition: fill 0.5s ease;
 }
 
-.link-icon:hover, .git-icon:hover, .linkedin-icon:hover {
+.behance-icon {
+    height: 80%;
+}
+
+.link-icon:hover, .git-icon:hover, .linkedin-icon:hover, .behance-icon:hover {
     fill: #40cf8e;
 }
 
@@ -354,7 +358,8 @@
 
 .contact-info-icons {
     display: flex;
-    gap: 15px;
+    /* align-items: flex-start; */
+    gap: 20px;
     height: 35px;
     margin-top: 10px;
     /* align-items: flex-; */

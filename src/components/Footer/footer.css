@@ -40,8 +40,12 @@
     display: inline-flex;
 }
 
-.footer-linkedin-icon, .footer-git-icon {
+.footer-linkedin-icon, .footer-git-icon, .footer-behance-icon {
     fill: #40cf8e;
     height: 20px;
     width: auto;
+}
+
+.footer-behance-icon {
+    height: 15px;
 }

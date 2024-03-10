@@ -7,6 +7,7 @@ import ContactForm from "../components/ContactForm/contactform";
 import { ReactComponent as LinkIcon } from '../assets/linkicon.svg';
 import { ReactComponent as GitIcon} from '../assets/githubicon.svg';
 import { ReactComponent as LinkedinIcon } from '../assets/LinkedIn_icon.svg';
+import { ReactComponent as BehanceIcon } from '../assets/behance-2.svg';
 import './page.css'
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
@@ -315,6 +316,7 @@ const Page = () => {
                       <div className="contact-info-icons">
                         <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkedinIcon className="linkedin-icon" /></a>
                         <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
+                        <a href="https://www.google.com/" target="_blank" rel="noreferrer"><BehanceIcon className="behance-icon" /></a>
                       </div>
                     </div>
                   </div>
