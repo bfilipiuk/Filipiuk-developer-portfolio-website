@@ -338,9 +338,10 @@
 }
 
 .contact-info {
+    margin-top: -15px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     font-size: larger;
     font-weight: 300;
     text-align: left;
