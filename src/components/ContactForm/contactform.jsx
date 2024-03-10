@@ -76,7 +76,7 @@ const ContactForm = ({ onFormAlert }) => {
             <div className="name-surname-container">
                 <div className="name-container">
                     <input
-                        className="form-input"
+                        className="form-input-name"
                         type="text"
                         id="name"
                         name="name"
@@ -90,7 +90,7 @@ const ContactForm = ({ onFormAlert }) => {
                 </div>
                 <div className="surname-container">
                     <input
-                        className="form-input"
+                        className="form-input-name"
                         type="text"
                         id="surname"
                         name="surname"
