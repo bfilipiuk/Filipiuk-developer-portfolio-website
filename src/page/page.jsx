@@ -306,6 +306,9 @@ const Page = () => {
                         {snackbarMessage}
                       </Alert>
                     </Snackbar>
+                    <div className="contact-info-header">
+                      Znajdziesz mnie również tu:
+                    </div>
                     <div className="contact-info">
                       <span>bartek.filipiuk02@gmail.com</span>
                       <span>+48 882 607 006</span>

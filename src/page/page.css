@@ -360,3 +360,9 @@
     /* align-items: flex-; */
     justify-content: start;
 }
+
+.contact-info-header {
+    margin-top: 15px;
+    color: white;
+    font-size: x-large;
+}
