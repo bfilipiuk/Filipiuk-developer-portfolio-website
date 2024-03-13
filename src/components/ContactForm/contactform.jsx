@@ -6,7 +6,7 @@ import './contactform.css';
 const ContactForm = ({ onFormAlert }) => {
     const [formData, setFormData] = useState({
         name: '',
-        subject: '',
+        surname: '',
         email: '',
         message: ''
     });
@@ -22,8 +22,8 @@ const ContactForm = ({ onFormAlert }) => {
             formIsValid = false;
         }
 
-        if (!formData.subject) {
-            errors.subject = 'Temat jest wymagany.';
+        if (!formData.surname) {
+            errors.subject = 'Nazwisko jest wymagane.';
             formIsValid = false;
         }
 
@@ -59,7 +59,7 @@ const ContactForm = ({ onFormAlert }) => {
             emailjs.sendForm('service_v09nzim', 'template_73q9k6o', e.target, '6-5mL-MhiwnqTkug9').then((result) =>
             {
                 console.log('Email sent via contact form: ', result.text);
-                setFormData({name: '', subject: '', email: '', message: ''});
+                setFormData({name: '', surname: '', email: '', message: ''});
 
                 onFormAlert('Wiadomość wysłana pomyślnie!', 'success')
             }, (error) => {

@@ -69,16 +69,14 @@ const Page = () => {
             <div>
               <Navbar />
               <div className="full-page">
-                <div className="main" id="start">
-                  <div className="header">
-                    <div className="header-text-1">Bartek Filipiuk</div>
-                    <div className="header-text-2">Developer Portfolio</div>
-                    <div className="header-text-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      In augue lectus, lobortis hendrerit augue ut, pretium facilisis arcu. Praesent sit amet
-                      viverra enim. Vestibulum quis justo sagittis, commodo ligula ut, auctor augue. Aliquam 
-                      non mi sed nunc pellentesque pretium ut id purus.
-                    </div>
+                <div className="header" id="start">
+                  <div className="header-text-1">Bartek Filipiuk</div>
+                  <div className="header-text-2">Developer Portfolio</div>
+                  <div className="header-text-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    In augue lectus, lobortis hendrerit augue ut, pretium facilisis arcu. Praesent sit amet
+                    viverra enim. Vestibulum quis justo sagittis, commodo ligula ut, auctor augue. Aliquam 
+                    non mi sed nunc pellentesque pretium ut id purus.
                   </div>
                 </div>
                 <div className="about" id="about">
