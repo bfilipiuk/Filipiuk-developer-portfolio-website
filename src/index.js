@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <ScrollToTop />
-      <BackgroundStars />
+      {/* <BackgroundStars /> */}
       <Page />
     </Router>
   </React.StrictMode>

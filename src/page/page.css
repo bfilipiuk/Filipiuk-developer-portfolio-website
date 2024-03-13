@@ -1,3 +1,42 @@
+@media screen and (max-width: 1400px) {
+    .header-text-1, .header-text-2 {
+      font-size: 3.5rem; /* Zmniejszenie rozmiaru czcionki dla mniejszych ekranów */
+    }
+    
+    .header-text-3 {
+      font-size: medium; /* Dostosowanie rozmiaru czcionki tekstu */
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .about, .projects, .contact {
+      width: auto; /* Zapewnia, że szerokość elementów jest automatycznie dostosowywana */
+      margin: auto 20px; /* Dodanie marginesów po bokach dla mniejszej szerokości ekranu */
+      max-width: calc(100% - 40px); /* Zapewnia, że treść nie wyjeżdża poza ekran */
+    }
+  
+    .header {
+      height: auto; /* Dostosowanie wysokości nagłówka do zawartości */
+      padding: 20px 0; /* Dodanie paddingu na górze i na dole */
+    }
+  
+    .experience-info-container, .projects-container, .contact-container {
+      flex-direction: column; /* Ustawienie elementów pionowo */
+      align-items: center; /* Wyśrodkowanie elementów */
+    }
+  
+    .experience-dates, .experience-info {
+      text-align: center; /* Wyśrodkowanie tekstu dla lepszej czytelności */
+    }
+  
+    .project {
+      width: 90%; /* Dostosowanie szerokości projektów do mniejszych ekranów */
+      max-width: 348px; /* Ograniczenie maksymalnej szerokości projektu */
+    }
+  }
+  
+
+
 .full-page {
     display: flex;
     flex-direction: column;
@@ -40,7 +79,7 @@
 
 .header-text-1, .header-text-2, .header-text-3 {
     /* width: 60%; */
-    padding-left: 50px;
+    /* padding-left: 50px; */
     display: flex;
     flex-wrap: wrap;
     font-family: "Poppins", sans-serif;
@@ -66,7 +105,7 @@
     max-width: 1600px;
 }
 
-.about {
+.about, .projects, .contact {
     max-width: 1100px;
     width: calc(100% - 100px);
     margin: auto 50px;
