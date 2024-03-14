@@ -49,3 +49,23 @@
 .footer-behance-icon {
     height: 15px;
 }
+
+@media screen and (max-width: 640px) {
+    .footer {
+        height: 30px;
+    }
+
+    .date, .footer-text {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .footer-icons {
+        gap: 10px;
+        margin-right: 10px;
+    }
+
+    .footer-linkedin-icon, .footer-git-icon, .footer-behance-icon {
+        height: 15px;
+    }
+}
