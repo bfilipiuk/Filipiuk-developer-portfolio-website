@@ -231,11 +231,12 @@ html, body {
 
 .projects-container {
     height: auto;
-    /* width: 100%; */
+    width: 100%;
     max-width: 1100px;
     margin-top: 30px;
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 25px;
 }
@@ -442,5 +443,58 @@ html, body {
         margin: 0; /* Usuwa margines, który mógłby powodować przewijanie */
         padding: 0 15px; /* Utrzymuje padding tylko wewnątrz, aby zachować odstępy */
         width: calc(100% - 30px); /* Odejmuje padding, aby uniknąć przewijania */
+    }
+
+    .about {
+        margin-top: 60px;
+    }
+
+    .about-header {
+        font-size: 17px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .skillset-header {
+        margin-top: 20px;
+        font-size: 17px;
+    }
+
+    .skillset-container {
+        margin-top: 5px;
+    }
+
+    .skillset-container span {
+        font-size: 15px;
+    }
+
+    .experience-header {
+        margin-top: 30px;
+        font-size: 17px;
+    }
+
+    /* tu experience do zrobienia */
+
+    .projects-header {
+        margin-top: 20px;
+        font-size: 17px;
+    }
+
+    .project {
+        width: 300px;
+        height: 200px;
+    }
+
+    .projects-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .project-title-skillset-container {
+        margin-top: 35px;
+        gap: 7px;
     }
 }
