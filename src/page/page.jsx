@@ -300,7 +300,7 @@ const Page = () => {
                   <div className="contact">
                     <div className="contact-header">Kontakt</div>
                     <div className="contact-container">
-                      <ContactForm onFormAlert={handleFormAlert} />
+                      {/* <ContactForm onFormAlert={handleFormAlert} /> */}
                       <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'center'}} open={snackbarOpen} autoHideDuration={6000} onClose={handleSnackbarClose}>
                         <Alert onClose={handleSnackbarClose} severity={snackbarSeverity}>
                           {snackbarMessage}

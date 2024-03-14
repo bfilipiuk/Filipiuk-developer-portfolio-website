@@ -1,40 +1,8 @@
-@media screen and (max-width: 1400px) {
-    .header-text-1, .header-text-2 {
-      font-size: 3.5rem; /* Zmniejszenie rozmiaru czcionki dla mniejszych ekranów */
-    }
-    
-    .header-text-3 {
-      font-size: medium; /* Dostosowanie rozmiaru czcionki tekstu */
-    }
-  }
-  
-  @media screen and (max-width: 1400px) {
-    .about, .projects, .contact {
-      width: auto; /* Zapewnia, że szerokość elementów jest automatycznie dostosowywana */
-      margin: auto 20px; /* Dodanie marginesów po bokach dla mniejszej szerokości ekranu */
-      max-width: calc(100% - 40px); /* Zapewnia, że treść nie wyjeżdża poza ekran */
-    }
-  
-    .header {
-      height: auto; /* Dostosowanie wysokości nagłówka do zawartości */
-      padding: 20px 0; /* Dodanie paddingu na górze i na dole */
-    }
-  
-    .experience-info-container, .projects-container, .contact-container {
-      flex-direction: column; /* Ustawienie elementów pionowo */
-      align-items: center; /* Wyśrodkowanie elementów */
-    }
-  
-    .experience-dates, .experience-info {
-      text-align: center; /* Wyśrodkowanie tekstu dla lepszej czytelności */
-    }
-  
-    .project {
-      width: 90%; /* Dostosowanie szerokości projektów do mniejszych ekranów */
-      max-width: 348px; /* Ograniczenie maksymalnej szerokości projektu */
-    }
-  }
-  
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 
 .full-page {
@@ -42,7 +10,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 100%;
+    max-width: 100vw; /* Ustawiamy max-width na 100 viewport width, aby zapobiec poziomemu przewijaniu */
+    /* overflow-x: hidden; */
+}
+
+.header, .about, .projects, .contact {
+    width: 100%; /* Zapewnia, że elementy nie wykraczają poza ekran */
+    max-width: 100vw; /* Zapewnia, że szerokość elementu nie przekracza szerokości widoku */
+    box-sizing: border-box; /* Zapobiega dodawaniu paddingu i borderów do szerokości elementu */
 }
 
 .header {
@@ -427,4 +402,41 @@
     margin-top: 15px;
     color: white;
     font-size: x-large;
+}
+
+/* Wersja mobilna! */
+@media screen and (max-width: 640px) {
+    .header {
+        height: auto; /* Zmieniamy wysokość na auto, aby dopasować do zawartości */
+      }
+    
+      .header::before {
+        /* Zajmuje cały dostępny obszar elementu .header */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../assets/zorza.png'); /* Upewnij się, że ścieżka do obrazka jest poprawna */
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+        z-index: -1;
+      }
+    
+      .header-text-1, .header-text-2, .header-text-3 {
+        padding: 0 20px; /* Dodajemy padding, aby tekst nie dotykał krawędzi ekranu */
+        font-size: 2rem; /* Dostosowujemy rozmiar czcionki */
+        justify-content: center; /* Centrujemy tekst */
+      }
+    
+      .header-text-3 {
+        font-size: 1rem; /* Dostosowanie rozmiaru czcionki dla mniejszego tekstu */
+      }
+
+      .about, .projects, .contact {
+        margin: 0; /* Usuwa margines, który mógłby powodować przewijanie */
+        padding: 0 15px; /* Utrzymuje padding tylko wewnątrz, aby zachować odstępy */
+        width: calc(100% - 30px); /* Odejmuje padding, aby uniknąć przewijania */
+    }
 }
