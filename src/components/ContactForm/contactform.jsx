@@ -99,7 +99,7 @@ const ContactForm = ({ onFormAlert }) => {
                         placeholder="Nazwisko: "
                     />
                     <div className="error-container">
-                        <div key={errors.subject} className="error">{errors.subject}</div>
+                        <div key={errors.subject} className="error">{errors.surname}</div>
                     </div>
                 </div>
             </div>
