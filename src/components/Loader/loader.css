@@ -33,3 +33,15 @@
     animation: increaseWidth 3s ease-in-out;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+@media screen and (max-width: 640px) {
+
+  .progress-bar {
+    width: 200px;
+    height: 5px;
+  }
+
+  .progress-bar-fill {
+    height: 5px;
+  }
+}
