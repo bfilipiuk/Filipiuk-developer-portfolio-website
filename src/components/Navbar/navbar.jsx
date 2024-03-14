@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { Link } from 'react-scroll';
 import './navbar.css';
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
     const [activeLink, setActiveLink] = useState('start');
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const backgroundAppear = () => {
         console.log(window.scrollY);
@@ -18,13 +19,46 @@ const Navbar = () => {
 
     window.addEventListener('scroll', backgroundAppear);
 
+    // const calculateTransform = () => {
+    //     switch(activeLink) {
+    //         case 'start': return '-200%';
+    //         case 'about': return '-67%';
+    //         case 'projects': return '66%';
+    //         case 'contact': return '201%';
+    //         default: return 0;
+    //     }
+    // };
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Usuń event listener przy odmontowywaniu komponentu
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const calculateTransform = () => {
-        switch(activeLink) {
-            case 'start': return '-200%';
-            case 'about': return '-67%';
-            case 'projects': return '66%';
-            case 'contact': return '201%';
-            default: return 0;
+        if (windowWidth <= 640) {
+            // Tu umieść zmienione wartości dla ekranów mniejszych niż 640px
+            switch(activeLink) {
+                case 'start': return '-147%'; // Przykładowa zmieniona wartość
+                case 'about': return '-52%';
+                case 'projects': return '50%';
+                case 'contact': return '148%';
+                default: return 0;
+            }
+        } else {
+            // Oryginalne wartości dla ekranów większych niż 640px
+            switch(activeLink) {
+                case 'start': return '-200%';
+                case 'about': return '-67%';
+                case 'projects': return '66%';
+                case 'contact': return '201%';
+                default: return 0;
+            }
         }
     };
 

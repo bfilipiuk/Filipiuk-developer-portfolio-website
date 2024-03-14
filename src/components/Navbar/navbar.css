@@ -87,3 +87,30 @@ nav ul li a:hover, nav ul li a:focus {
     border-radius: 4rem;
     transition: transform 0.5s ease;
 }
+
+/* Wersja mobilna ! */
+
+@media screen and (max-width: 640px) {
+    nav ul li a {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        width: 80px;
+    }
+
+    .navbar {
+        width: 325px;
+        height: 40px;
+    }
+
+    .navbar-active {
+        width: 325px;
+        height: 40px;
+    }
+
+    .backgroundIndicator {
+        bottom: 5px;
+        width: 80px;
+        height: 30px;
+    }
+}
