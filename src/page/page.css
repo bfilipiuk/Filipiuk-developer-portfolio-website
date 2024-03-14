@@ -78,6 +78,7 @@ html, body {
     color: rgb(185, 185, 185);
     font-size: large;
     max-width: 1600px;
+    margin-top: 20px;
 }
 
 .about, .projects, .contact {
@@ -496,5 +497,24 @@ html, body {
     .project-title-skillset-container {
         margin-top: 35px;
         gap: 7px;
+    }
+
+    .contact-header {
+        margin-top: 35px;
+        font-size: 17px;
+    }
+
+    .contact-info-header {
+        font-size: 17px;
+    }
+
+    .contact-info {
+        margin-top: -20px;
+        font-size: 15px;
+    }
+
+    .contact-info-icons {
+        height: 25px;
+        gap: 13px;
     }
 }

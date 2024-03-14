@@ -23,7 +23,7 @@ const ContactForm = ({ onFormAlert }) => {
         }
 
         if (!formData.surname) {
-            errors.subject = 'Nazwisko jest wymagane.';
+            errors.surname = 'Nazwisko jest wymagane.';
             formIsValid = false;
         }
 
@@ -94,7 +94,7 @@ const ContactForm = ({ onFormAlert }) => {
                         type="text"
                         id="surname"
                         name="surname"
-                        value={formData.subject}
+                        value={formData.surname}
                         onChange={handleChange}
                         placeholder="Nazwisko: "
                     />

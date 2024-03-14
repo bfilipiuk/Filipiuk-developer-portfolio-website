@@ -121,9 +121,11 @@
 .name-surname-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     /* justify-content: center; */
     justify-content: space-between;
+    /* align-items: center; */
     /* gap: 0px; */
 }
 
@@ -135,8 +137,6 @@
 .surname-container {
     width: 100%;
 }
-
-
 
 .submit-btn {
     user-select: none;
@@ -209,5 +209,70 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .contact-form-header {
+        font-size: 20px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .form-input {
+        width: 240px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .form-input::placeholder {
+        font-size: 15px;
+    }
+    
+    .form-input-name {
+        width: 240px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .form-input-name::placeholder {
+        font-size: 15px;
+    }
+
+    .form-text-area {
+        width: 240px;
+        font-size: 15px;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .form-text-area::placeholder {
+        font-size: 15px;
+    }
+
+    .name-container, .surname-container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-surname-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .error-container {
+        height: 18px;
+    }
+
+    .error {
+        font-size: 12px;
+    }
+
+    .submit-btn {
+        font-size: 15px;
+        height: 35px;
     }
 }
