@@ -10,19 +10,16 @@ html, body {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 100vw; /* Ustawiamy max-width na 100 viewport width, aby zapobiec poziomemu przewijaniu */
-    /* overflow-x: hidden; */
+    max-width: 100vw;
 }
 
 .header, .about, .projects, .contact {
-    width: 100%; /* Zapewnia, że elementy nie wykraczają poza ekran */
-    max-width: 100vw; /* Zapewnia, że szerokość elementu nie przekracza szerokości widoku */
-    box-sizing: border-box; /* Zapobiega dodawaniu paddingu i borderów do szerokości elementu */
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
 .header {
-    /* position: relative; */
-    /* width: auto; */
     height: 700px;
     color: white;
     text-align: center;
@@ -53,8 +50,6 @@ html, body {
 }
 
 .header-text-1, .header-text-2, .header-text-3 {
-    /* width: 60%; */
-    /* padding-left: 50px; */
     display: flex;
     flex-wrap: wrap;
     font-family: "Poppins", sans-serif;
@@ -148,11 +143,10 @@ html, body {
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
-    /* Usunięto wysokość, aby kontener mógł dostosować się do zawartości */
 }
 
 .experience-dates {
-    flex-basis: 20%; /* Ustawia bazową szerokość na 300px */
+    flex-basis: 20%;
     color: rgb(185, 185, 185);
     font-size: large;
 }
@@ -161,13 +155,12 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-grow: 1; /* Pozwala elementowi rozciągać się, aby zająć dostępną przestrzeń */
-    flex-basis: 0; /* Ustawia bazową szerokość na 0%, co pozwala flex-grow działać od początku */
-    max-width: 80%; /* Ogranicza maksymalną szerokość do 70% kontenera nadrzędnego */
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 80%;
 }
 
 .experience-title {
-    /* border: 1px solid white; */
     height: auto;
     width: 600px;
 
@@ -177,19 +170,15 @@ html, body {
 }
 
 .experience-info {
-    /* border: 1px solid white; */
     margin-top: 10px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    /* width: 800px; */
-
     color: rgb(185, 185, 185);
     font-size: large;
 }
 
 .experience-skillset {
-    /* border: 1px solid white; */
     margin-top: 10px;
     height: auto;
     width: 1000px;
@@ -247,8 +236,6 @@ html, body {
     height: 220px;
     background: transparent;
     box-sizing: border-box;
-    /* margin-right: 25px;
-    margin-bottom: 25px; */
     color: white;
     font-size: 30px;
     display: flex;
@@ -364,7 +351,6 @@ html, body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     width: 100%;
     margin-top: 30px;
     gap: 30px;
@@ -378,7 +364,6 @@ html, body {
     font-size: larger;
     font-weight: 300;
     text-align: left;
-    /* margin-right: ; */
 }
 
 .contact-info span {
@@ -392,11 +377,9 @@ html, body {
 
 .contact-info-icons {
     display: flex;
-    /* align-items: flex-start; */
     gap: 20px;
     height: 35px;
     margin-top: 10px;
-    /* align-items: flex-; */
     justify-content: start;
 }
 
@@ -409,17 +392,16 @@ html, body {
 /* Wersja mobilna! */
 @media screen and (max-width: 640px) {
     .header {
-        height: auto; /* Zmieniamy wysokość na auto, aby dopasować do zawartości */
+        height: auto;
       }
     
       .header::before {
-        /* Zajmuje cały dostępny obszar elementu .header */
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url('../assets/zorza.png'); /* Upewnij się, że ścieżka do obrazka jest poprawna */
+        background-image: url('../assets/zorza.png');
         background-size: cover;
         background-position: center;
         opacity: 0.5;
@@ -427,9 +409,9 @@ html, body {
       }
     
       .header-text-1, .header-text-2, .header-text-3 {
-        padding: 0 20px; /* Dodajemy padding, aby tekst nie dotykał krawędzi ekranu */
-        font-size: 1.7rem; /* Dostosowujemy rozmiar czcionki */
-        justify-content: center; /* Centrujemy tekst */
+        padding: 0 20px;
+        font-size: 1.7rem;
+        justify-content: center;
       }
 
       .header-text-1 {
@@ -437,13 +419,13 @@ html, body {
       }
     
       .header-text-3 {
-        font-size: 0.9rem; /* Dostosowanie rozmiaru czcionki dla mniejszego tekstu */
+        font-size: 0.9rem;
       }
 
       .about, .projects, .contact {
-        margin: 0; /* Usuwa margines, który mógłby powodować przewijanie */
-        padding: 0 15px; /* Utrzymuje padding tylko wewnątrz, aby zachować odstępy */
-        width: calc(100% - 30px); /* Odejmuje padding, aby uniknąć przewijania */
+        margin: 0;
+        padding: 0 15px;
+        width: calc(100% - 30px);
     }
 
     .about {
@@ -505,6 +487,7 @@ html, body {
     }
 
     .contact-info-header {
+        margin-top: -10px;
         font-size: 17px;
     }
 
