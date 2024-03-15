@@ -393,9 +393,9 @@ html, body {
 @media screen and (max-width: 640px) {
     .header {
         height: auto;
-      }
+    }
     
-      .header::before {
+    .header::before {
         position: absolute;
         top: 0;
         left: 0;
@@ -406,23 +406,23 @@ html, body {
         background-position: center;
         opacity: 0.5;
         z-index: -1;
-      }
+    }
     
-      .header-text-1, .header-text-2, .header-text-3 {
+    .header-text-1, .header-text-2, .header-text-3 {
         padding: 0 20px;
         font-size: 1.7rem;
         justify-content: center;
-      }
+    }
 
-      .header-text-1 {
+    .header-text-1 {
         margin-top: 100px;
-      }
+    }
     
-      .header-text-3 {
+    .header-text-3 {
         font-size: 0.9rem;
-      }
+    }
 
-      .about, .projects, .contact {
+    .about, .projects, .contact {
         margin: 0;
         padding: 0 15px;
         width: calc(100% - 30px);
