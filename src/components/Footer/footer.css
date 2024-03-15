@@ -14,10 +14,12 @@
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 400;
+
+    bottom: 0;
 }
 
 .date {
-    margin-left: 150px;
+    margin-left: 7vw;
     color: #40cf8e;
 }
 
@@ -28,7 +30,7 @@
 .footer-icons {
     display: flex;
     flex-direction: row;
-    margin-right: 150px;
+    margin-right: 7vw;
     gap: 20px;
     align-items: center;
     justify-content: center;

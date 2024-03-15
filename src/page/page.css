@@ -146,7 +146,8 @@ html, body {
 }
 
 .experience-dates {
-    flex-basis: 20%;
+    /* flex-basis: 22%; */
+    padding-right: 15px;
     color: rgb(185, 185, 185);
     font-size: large;
 }
@@ -176,6 +177,7 @@ html, body {
     flex-wrap: wrap;
     color: rgb(185, 185, 185);
     font-size: large;
+    width: 100%;
 }
 
 .experience-skillset {
@@ -390,7 +392,7 @@ html, body {
     font-size: x-large;
 }
 
-/* Rezised version! */
+/* Resized version! */
 @media screen and (max-width: 1120px) {
     .header {
         height: auto;
@@ -441,6 +443,16 @@ html, body {
 
     .project {
         width: 27vw;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .experience-info {
+        font-size: medium;
+    }
+
+    .experience-info-container {
+        width: 50vw;
     }
 }
 
