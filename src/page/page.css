@@ -181,7 +181,7 @@ html, body {
 .experience-skillset {
     margin-top: 10px;
     height: auto;
-    width: 1000px;
+    /* width: 1000px; */
 }
 
 .experience-skillset span {
@@ -460,6 +460,18 @@ html, body {
     }
 
     /* tu experience do zrobienia */
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience-info-container {
+        width: 100vw;
+    }
+
+    .experience-info {
+        font-weight: 200;
+    }
 
     .projects-header {
         margin-top: 20px;
