@@ -209,6 +209,8 @@
     }
 }
 
+/* Wersja mobilna! */
+
 @media screen and (max-width: 640px) {
     .contact-form-header {
         font-size: 20px;

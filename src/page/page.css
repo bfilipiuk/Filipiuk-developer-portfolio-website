@@ -390,7 +390,51 @@ html, body {
     font-size: x-large;
 }
 
-/* Wersja mobilna! */
+/* Rezised version! */
+@media screen and (max-width: 1120px) {
+    .header {
+        height: auto;
+    }
+    
+    .header::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../assets/zorza.png');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    
+    .header-text-1, .header-text-2, .header-text-3 {
+        padding: 0 30px;
+        font-size: 3.5rem;
+        justify-content: center;
+    }
+
+    .header-text-1 {
+        margin-top: 150px;
+    }
+    
+    .header-text-3 {
+        font-size: 1.1rem;
+    }
+
+    .about, .projects, .contact {
+        margin: 0;
+        padding: 0 30px;
+        width: calc(100% - 60px);
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+}
+
+/* Mobile version! */
 @media screen and (max-width: 640px) {
     .header {
         height: auto;
