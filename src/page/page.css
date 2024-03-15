@@ -432,6 +432,22 @@ html, body {
     .about {
         margin-top: 100px;
     }
+
+    /* Tu do zrobienia experience */
+
+    .projects-container {
+        justify-content: flex-start;
+    }
+
+    .project {
+        width: 27vw;
+    }
+}
+
+@media screen and (max-width: 984px) {
+    .project {
+        width: 35vw;
+    }
 }
 
 /* Mobile version! */
