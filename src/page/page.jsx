@@ -221,81 +221,81 @@ const Page = () => {
                   <span>React</span>
                   <span>React</span>
                   <span>React</span>
+                </div>
+              </div>
+            </div>
+            <div className="project">
+              <div className="project-icon-container">
+                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkIcon className="link-icon" /></a>
+                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
+              </div>
+              <div className="project-title-skillset-container">
+                <span className="project-title">Weather app</span>
+                <div className="project-skillset">
+                  <span>React</span>
+                  <span>React</span>
+                  <span>React</span>
+                </div>
+              </div>
+            </div>
+            <div className="project">
+              <div className="project-icon-container">
+                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkIcon className="link-icon" /></a>
+                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
+              </div>
+              <div className="project-title-skillset-container">
+                <span className="project-title">Weather app</span>
+                <div className="project-skillset">
+                  <span>React</span>
+                  <span>React</span>
+                  <span>React</span>
+                </div>
+              </div>
+            </div>
+            <div className="project">
+              <div className="project-icon-container">
+                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkIcon className="link-icon" /></a>
+                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
+              </div>
+              <div className="project-title-skillset-container">
+                <span className="project-title">Weather app</span>
+                <div className="project-skillset">
+                  <span>React</span>
+                  <span>React</span>
+                  <span>React</span>
+                </div>
+              </div>
+            </div>
+            <div className="project">
+              <div className="project-icon-container">
+                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkIcon className="link-icon" /></a>
+                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
+              </div>
+              <div className="project-title-skillset-container">
+                <span className="project-title">Weather app</span>
+                <div className="project-skillset">
+                  <span>React</span>
+                  <span>React</span>
+                  <span>React</span>
+                </div>
+              </div>
+            </div>
+            <div className="project">
+              <div className="project-icon-container">
+                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkIcon className="link-icon" /></a>
+                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
+              </div>
+              <div className="project-title-skillset-container">
+                <span className="project-title">Weather app</span>
+                <div className="project-skillset">
+                  <span>React</span>
+                  <span>React</span>
+                  <span>React</span>
+                </div>
               </div>
             </div>
           </div>
-                      <div className="project">
-                        <div className="project-icon-container">
-                          <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkIcon className="link-icon" /></a>
-                          <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
-                        </div>
-                        <div className="project-title-skillset-container">
-                          <span className="project-title">Weather app</span>
-                          <div className="project-skillset">
-                            <span>React</span>
-                            <span>React</span>
-                            <span>React</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="project">
-                        <div className="project-icon-container">
-                          <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkIcon className="link-icon" /></a>
-                          <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
-                        </div>
-                        <div className="project-title-skillset-container">
-                          <span className="project-title">Weather app</span>
-                          <div className="project-skillset">
-                            <span>React</span>
-                            <span>React</span>
-                            <span>React</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="project">
-                        <div className="project-icon-container">
-                          <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkIcon className="link-icon" /></a>
-                          <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
-                        </div>
-                        <div className="project-title-skillset-container">
-                          <span className="project-title">Weather app</span>
-                          <div className="project-skillset">
-                            <span>React</span>
-                            <span>React</span>
-                            <span>React</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="project">
-                        <div className="project-icon-container">
-                          <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkIcon className="link-icon" /></a>
-                          <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
-                        </div>
-                        <div className="project-title-skillset-container">
-                          <span className="project-title">Weather app</span>
-                          <div className="project-skillset">
-                            <span>React</span>
-                            <span>React</span>
-                            <span>React</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="project">
-                        <div className="project-icon-container">
-                          <a href="https://www.google.com/" target="_blank" rel="noreferrer"><LinkIcon className="link-icon" /></a>
-                          <a href="https://www.google.com/" target="_blank" rel="noreferrer"><GitIcon className="git-icon" /></a>
-                        </div>
-                        <div className="project-title-skillset-container">
-                          <span className="project-title">Weather app</span>
-                          <div className="project-skillset">
-                            <span>React</span>
-                            <span>React</span>
-                            <span>React</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+        </div>
         <div className="contact" id="contact">
           <div className="contact-header">Kontakt</div>
           <div className="contact-container">
