@@ -154,7 +154,7 @@
     background-size: 200% 100%;
     background-position: 100%;
     /* padding: 20px; */
-    width: 89%;
+    width: 90%;
     height: 50px;
     transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
 }
@@ -217,7 +217,7 @@
     }
 
     .form-input {
-        width: 240px;
+        width: 82%;
         height: 35px;
         font-size: 15px;
     }
@@ -227,7 +227,7 @@
     }
     
     .form-input-name {
-        width: 240px;
+        width: 82%;
         height: 35px;
         font-size: 15px;
     }
@@ -237,7 +237,7 @@
     }
 
     .form-text-area {
-        width: 240px;
+        width: 80%;
         font-size: 15px;
         padding-top: 20px;
         margin-top: 20px;

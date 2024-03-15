@@ -210,6 +210,7 @@ html, body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    /* flex-wrap: wrap; */
     align-items: flex-start;
 }
 
@@ -459,7 +460,6 @@ html, body {
         font-size: 17px;
     }
 
-    /* tu experience do zrobienia */
     .experience-container {
         display: flex;
         flex-direction: column;
@@ -479,13 +479,16 @@ html, body {
     }
 
     .project {
-        width: 300px;
+        width: 260px;
         height: 200px;
     }
 
     .projects-container {
         display: flex;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-items: flex-start; */
+        justify-content: start;
     }
 
     .project-title-skillset-container {
@@ -511,5 +514,11 @@ html, body {
     .contact-info-icons {
         height: 25px;
         gap: 13px;
+    }
+}
+
+@media screen and (max-width: 622px) {
+    .project {
+        width: 90vw;
     }
 }
