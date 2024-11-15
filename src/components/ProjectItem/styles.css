@@ -1,0 +1,69 @@
+.project {
+    width: 340px;
+    height: 220px;
+    background: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    backdrop-filter: blur(1px);
+    background-image: linear-gradient(to bottom left, rgb(95, 95, 95), rgba(75, 75, 75, 0));
+    background-size: 250% 250%;
+    background-position: bottom left;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 15px;
+    transition: background-position 0.7s ease-in-out;
+}
+
+.project:hover {
+    background-position: 30% 100%;
+    border: 1px solid rgb(133, 133, 133);
+}
+
+.project-icon-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+    margin-right: 18px;
+    gap: 18px;
+}
+
+.project-title-skillset-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 43px;
+    gap: 15px;
+}
+
+.project-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.project-skillset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-skillset span {
+    display: inline-block;
+    user-select: none;
+    color: #40cf8e;
+    outline: 1px solid #40cf8e;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #40cf8e 50%, rgba(32, 32, 32, 0.0) 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.5s ease, color 0.5s ease;
+}
+
+.project-skillset span:hover {
+    background-position: 0%;
+    color: black;
+}

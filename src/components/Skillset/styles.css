@@ -1,0 +1,26 @@
+.skillset-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.skillset-container span {
+    display: inline-block;
+    user-select: none;
+    color: #40cf8e;
+    outline: 1px solid #40cf8e;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #40cf8e 50%, rgb(10, 10, 10) 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.5s ease, color 0.5s ease;
+}
+
+.skillset-container span:hover {
+    background-position: 0%;
+    color: black;
+}

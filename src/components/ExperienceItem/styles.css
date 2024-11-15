@@ -1,0 +1,38 @@
+.experience-container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.experience-dates {
+    padding-right: 15px;
+    color: rgb(185, 185, 185);
+    font-size: large;
+}
+
+.experience-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 80%;
+}
+
+.experience-title {
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+
+.experience-info {
+    margin-top: 10px;
+    color: rgb(185, 185, 185);
+    font-size: large;
+    width: 100%;
+}
+
+.experience-skillset {
+    margin-top: 10px;
+}
