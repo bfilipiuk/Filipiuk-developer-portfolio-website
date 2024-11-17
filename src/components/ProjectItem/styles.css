@@ -1,5 +1,5 @@
 .project {
-    width: 340px;
+    width: 335px;
     height: 220px;
     background: transparent;
     color: white;
@@ -15,6 +15,10 @@
     transition: background-position 0.7s ease-in-out;
 }
 
+.project-link {
+    text-decoration: none;
+}
+
 .project:hover {
     background-position: 30% 100%;
     border: 1px solid rgb(133, 133, 133);
@@ -28,6 +32,13 @@
     gap: 18px;
 }
 
+.project-icon {
+    width: auto;
+    height: 100%;
+    fill: white;
+    color: white;
+}
+
 .project-title-skillset-container {
     display: flex;
     flex-direction: column;
@@ -37,6 +48,7 @@
 
 .project-title {
     font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
 }
@@ -66,4 +78,11 @@
 .project-skillset span:hover {
     background-position: 0%;
     color: black;
+}
+
+@media(max-width: 768px) {
+    .project {
+        /* width: 100%; */
+        width: 100%;
+    }
 }

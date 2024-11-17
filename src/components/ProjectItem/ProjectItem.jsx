@@ -1,11 +1,12 @@
-import "./styles.css"
+import "./styles.css";
 
-const ProjectItem = ({ title, skills, links }) => (
+const ProjectItem = ({ title, skills, links, href }) => (
+  <a href={href} target="_blank" rel="noreferrer" className="project-link">
     <div className="project">
       <div className="project-icon-container">
-        {links.map(({ href, Icon }, index) => (
-          <a key={index} href={href} target="_blank" rel="noreferrer">
-            <Icon className="link-icon" />
+        {links.map(({ href, src, alt }, index) => (
+          <a key={index} href={href} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>
+            <img src={src} alt={alt} className="project-icon" />
           </a>
         ))}
       </div>
@@ -18,7 +19,7 @@ const ProjectItem = ({ title, skills, links }) => (
         </div>
       </div>
     </div>
-  );
-  
-  export default ProjectItem;
-  
+  </a>
+);
+
+export default ProjectItem;

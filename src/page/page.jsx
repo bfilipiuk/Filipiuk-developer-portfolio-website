@@ -7,9 +7,9 @@ import CustomSnackbar from "../components/Snackbar/Snackbar";
 import ExperienceItem from "../components/ExperienceItem/ExperienceItem";
 import ProjectItem from "../components/ProjectItem/ProjectItem";
 import Skillset from "../components/Skillset/Skillset";
-import { ReactComponent as LinkedinIcon } from "../assets/LinkedIn_icon.svg";
-import { ReactComponent as GitIcon } from "../assets/githubicon.svg";
-import { ReactComponent as BehanceIcon } from "../assets/behance-2.svg";
+// import { ReactComponent as LinkedinIcon } from "../assets/LinkedIn_icon.svg";
+// import { ReactComponent as GitIcon } from "../assets/githubicon.svg";
+// import { ReactComponent as BehanceIcon } from "../assets/behance-2.svg";
 import "./styles.css";
 
 const Page = () => {
@@ -51,44 +51,68 @@ const Page = () => {
           <h1 className="header-text-1">Bartek Filipiuk</h1>
           <h2 className="header-text-2">Developer Portfolio</h2>
           <p className="header-text-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue
-            lectus, lobortis hendrerit augue ut, pretium facilisis arcu.
+            Passionate about technology and focused on creating solutions that 
+            address real-world challenges in IT and everyday life. Technology is not just about innovation but also about making a tangible difference in people’s lives.
           </p>
         </header>
 
         <section id="about" className="about">
-          <h2 className="about-header">O mnie</h2>
+          <h2 className="about-header">About me</h2>
           <p className="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue
-            lectus, lobortis hendrerit augue ut, pretium facilisis arcu.
+            Fourth-year Telecommunications student on ICT specialization with a strong interest in IT engineering. I’m passionate about solving real-world problems, 
+            both in IT and in everyday life, always looking to make things work better. I like learning new things as I believe that no knowledge 
+            is useless—everything can prove valuable one day in the IT world . In my spare time I am an enthusiast of extreme physical challenges 
+            and sports in general, which have taught me to keep "banging my head against the wall" until I reach my goals.
           </p>
-          <Skillset skills={["React", "JavaScript", "CSS", "HTML", "Git"]} />
-
-          <h2 className="experience-header">Doświadczenie</h2>
-          <ExperienceItem
-            dates="Kwiecień 2020 - Marzec 2024"
-            title="Freelance - Graphic Designer"
-            info="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            skills={["React", "CSS", "Figma"]}
-          />
+          <h2 className="experience-header">Skillset</h2>
+          <Skillset skills={["Networking", "SDN", "QoS", "Linux", "Python", "Java", "C", "C++", "Arduino", "HTML", "CSS", "React", 
+                            "JavaScript", "Azure", "Bash", "GitHub or other VCS", "Latex", "Wireshark", "Mobile Networks", "Figma UI/UX"]} />
         </section>
 
         <section id="projects" className="projects">
-          <h2 className="projects-header">Projekty</h2>
+          <h2 className="projects-header">Projects</h2>
           <div className="projects-container">
             <ProjectItem
-              title="Weather App"
+              title="Project"
               skills={["React", "API Integration"]}
               links={[
-                { href: "https://www.google.com", Icon: LinkedinIcon },
-                { href: "https://www.google.com", Icon: GitIcon },
+                { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
+              ]}
+              href="https://google.com"
+            />
+            <ProjectItem
+              title="Project"
+              skills={["React", "API Integration"]}
+              links={[
+                { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
+              ]}
+            />
+            <ProjectItem
+              title="Project"
+              skills={["React", "API Integration"]}
+              links={[
+                { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
+              ]}
+            />
+            <ProjectItem
+              title="Project"
+              skills={["React", "API Integration"]}
+              links={[
+                { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
+              ]}
+            />
+            <ProjectItem
+              title="Project"
+              skills={["React", "API Integration"]}
+              links={[
+                { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
               ]}
             />
           </div>
         </section>
 
         <section id="contact" className="contact">
-          <h2 className="contact-header">Kontakt</h2>
+          <h2 className="contact-header">Contact</h2>
           <ContactForm onFormAlert={handleFormAlert} />
           <CustomSnackbar
             open={snackbarOpen}
@@ -96,7 +120,7 @@ const Page = () => {
             message={snackbarMessage}
             severity={snackbarSeverity}
           />
-          <div className="contact-info-header">Znajdziesz mnie również tu:</div>
+          <div className="contact-info-header">Find me here:</div>
           <div className="contact-info">
             <span>bartek.filipiuk02@gmail.com</span>
             <span>+48 882 607 006</span>
@@ -106,21 +130,21 @@ const Page = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <LinkedinIcon className="linkedin-icon" />
+                <img src="/assets/LinkedIn_icon.svg" className="linkedin-icon" />             
               </a>
               <a
                 href="https://www.google.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <GitIcon className="git-icon" />
+                <img src="/assets/githubicon.svg" className="git-icon" />
               </a>
               <a
                 href="https://www.google.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <BehanceIcon className="behance-icon" />
+                <img src="/assets/behance-2.svg" className="behance-icon" />
               </a>
             </div>
           </div>

@@ -71,9 +71,9 @@ const Navbar = () => {
             <div className="backgroundIndicator" style={{ transform: `translateX(${calculateTransform()})` }}></div>
             <ul>
                 <li><Link className={activeLink === 'start' ? 'active' : ''} to="start" spy={true} smooth={true} offset={-70} duration={1000} onSetActive={() => setActiveLink('start')} onClick={() => handleClick('start')}>Start</Link></li>
-                <li><Link className={activeLink === 'about' ? 'active' : ''} to="about" spy={true} smooth={true} offset={-70} duration={1000} onSetActive={() => setActiveLink('about')} onClick={() => handleClick('about')}>O mnie</Link></li>
-                <li><Link className={activeLink === 'projects' ? 'active' : ''} to="projects" spy={true} smooth={true} offset={-70} duration={1000} onSetActive={() => setActiveLink('projects')} onClick={() => handleClick('projects')}>Projekty</Link></li>
-                <li><Link className={activeLink === 'contact' ? 'active' : ''} to="contact" spy={true} smooth={true} offset={-70} duration={1000} onSetActive={() => setActiveLink('contact')} onClick={() => handleClick('contact')}>Kontakt</Link></li>
+                <li><Link className={activeLink === 'about' ? 'active' : ''} to="about" spy={true} smooth={true} offset={-70} duration={1000} onSetActive={() => setActiveLink('about')} onClick={() => handleClick('about')}>About</Link></li>
+                <li><Link className={activeLink === 'projects' ? 'active' : ''} to="projects" spy={true} smooth={true} offset={-70} duration={1000} onSetActive={() => setActiveLink('projects')} onClick={() => handleClick('projects')}>Projects</Link></li>
+                <li><Link className={activeLink === 'contact' ? 'active' : ''} to="contact" spy={true} smooth={true} offset={-70} duration={1000} onSetActive={() => setActiveLink('contact')} onClick={() => handleClick('contact')}>Contact</Link></li>
             </ul>
         </nav>
     );

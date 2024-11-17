@@ -18,25 +18,25 @@ const ContactForm = ({ onFormAlert }) => {
         let errors = {};
 
         if (!formData.name) {
-            errors.name = 'Imię jest wymagane.';
+            errors.name = 'First name is required.';
             formIsValid = false;
         }
 
         if (!formData.surname) {
-            errors.surname = 'Nazwisko jest wymagane.';
+            errors.surname = 'Last name is required.';
             formIsValid = false;
         }
 
         if (!formData.email) {
-            errors.email = 'Email jest wymagany.';
+            errors.email = 'Email is required.';
             formIsValid = false;
         } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-            errors.email = 'Podany email jest nieprawidłowy.';
+            errors.email = 'Email is incorrect.';
             formIsValid = false;
         }
 
         if (!formData.message) {
-            errors.message = 'Wiadomość jest wymagana.';
+            errors.message = 'Message is required.';
             formIsValid = false;
         }
 
@@ -72,36 +72,30 @@ const ContactForm = ({ onFormAlert }) => {
 
     return (
         <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="contact-form-header">Skontakuj się ze mną</div>
-            <div className="name-surname-container">
-                <div className="name-container">
-                    <input
-                        className="form-input-name"
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Imię: "
-                    />
-                    <div className="error-container">
-                        <div key={errors.name} className="error">{errors.name}</div>
-                    </div>
-                </div>
-                <div className="surname-container">
-                    <input
-                        className="form-input-name"
-                        type="text"
-                        id="surname"
-                        name="surname"
-                        value={formData.surname}
-                        onChange={handleChange}
-                        placeholder="Nazwisko: "
-                    />
-                    <div className="error-container">
-                        <div key={errors.subject} className="error">{errors.surname}</div>
-                    </div>
-                </div>
+            <div className="contact-form-header">Contact with me</div>
+            <input
+                className="form-input"
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="First name: "
+            />
+            <div className="error-container">
+                <div key={errors.name} className="error">{errors.name}</div>
+            </div>
+            <input
+                className="form-input"
+                type="text"
+                id="surname"
+                name="surname"
+                value={formData.surname}
+                onChange={handleChange}
+                placeholder="Last name: "
+            />
+            <div className="error-container">
+                <div key={errors.subject} className="error">{errors.surname}</div>
             </div>
             <input
                 className="form-input"
@@ -120,7 +114,7 @@ const ContactForm = ({ onFormAlert }) => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Wiadomość: "
+                placeholder="Message: "
             />
             <div className="error-container">
                 <div key={errors.message} className="error">{errors.message}</div>
@@ -133,7 +127,7 @@ const ContactForm = ({ onFormAlert }) => {
                 type="submit"
                 id="submit-btn"
                 >
-                    Wyślij wiadomość
+                    Send message
             </button>
         </form>
     );
