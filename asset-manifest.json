@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/My-portfolio-website/static/css/main.20128344.css",
+    "main.js": "/My-portfolio-website/static/js/main.e7539c76.js",
+    "static/media/zorza.png": "/My-portfolio-website/static/media/zorza.aa1339488863078e5fd9.png",
+    "index.html": "/My-portfolio-website/index.html",
+    "main.20128344.css.map": "/My-portfolio-website/static/css/main.20128344.css.map",
+    "main.e7539c76.js.map": "/My-portfolio-website/static/js/main.e7539c76.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20128344.css",
+    "static/js/main.e7539c76.js"
+  ]
+}
