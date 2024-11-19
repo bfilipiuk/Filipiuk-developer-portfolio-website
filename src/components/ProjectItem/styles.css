@@ -4,7 +4,10 @@
     background: transparent;
     color: white;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     position: relative;
     backdrop-filter: blur(1px);
     background-image: linear-gradient(to bottom left, rgb(95, 95, 95), rgba(75, 75, 75, 0));
@@ -33,17 +36,13 @@
 }
 
 .project-icon {
-    width: auto;
-    height: 100%;
+    width: 25px;
+    height: auto;
     fill: white;
     color: white;
-}
-
-.project-title-skillset-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 43px;
-    gap: 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
 .project-title {
@@ -51,12 +50,18 @@
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
+    width: 90%;
 }
 
 .project-skillset {
+    width: 90%;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .project-skillset span {

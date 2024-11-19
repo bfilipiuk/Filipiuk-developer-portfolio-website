@@ -73,40 +73,44 @@ const Page = () => {
           <h2 className="projects-header">Projects</h2>
           <div className="projects-container">
             <ProjectItem
-              title="Project"
-              skills={["React", "API Integration"]}
+              title="Tone of text detection web app"
+              skills={["React", "AI", "API Integration"]}
               links={[
                 { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
               ]}
-              href="https://google.com"
+              href="https://github.com/bfilipiuk/Detecting-Emotional-Tone-of-Text"
             />
             <ProjectItem
-              title="Project"
-              skills={["React", "API Integration"]}
+              title="Gaming platform website template"
+              skills={["HTML", "CSS", "JavaScript"]}
               links={[
                 { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
               ]}
+              href="https://github.com/bfilipiuk/Gaming-platform-website-template"
             />
             <ProjectItem
-              title="Project"
-              skills={["React", "API Integration"]}
+              title="Particle collisions engine"
+              skills={["Java"]}
               links={[
                 { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
               ]}
+              href="https://github.com/bfilipiuk/Particle-collisions"
             />
             <ProjectItem
-              title="Project"
-              skills={["React", "API Integration"]}
+              title="Arduino UDP tuple space communcation "
+              skills={["C++", "Arduino", "Networks"]}
               links={[
                 { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
               ]}
+              href="https://github.com/bfilipiuk/Arduino-UDP-tuple-space-communcation"
             />
             <ProjectItem
-              title="Project"
-              skills={["React", "API Integration"]}
+              title="Solving physics problems with python"
+              skills={["Python", "Jupyter Notebook"]}
               links={[
-                { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
+                { href: "https://github.com", src: "logo192.png", alt: "FitHub Icon" }
               ]}
+              href="https://github.com/bfilipiuk/Solving-quantum-physics-problems-with-python"
             />
           </div>
         </section>
