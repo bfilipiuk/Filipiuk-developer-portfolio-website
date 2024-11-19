@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Filipiuk-developer-portfolio-website/static/css/main.b6ddb512.css",
+    "main.css": "/Filipiuk-developer-portfolio-website/static/css/main.a40b7869.css",
     "main.js": "/Filipiuk-developer-portfolio-website/static/js/main.5ea148d9.js",
     "static/media/zorza.png": "/Filipiuk-developer-portfolio-website/static/media/zorza.aa1339488863078e5fd9.png",
     "index.html": "/Filipiuk-developer-portfolio-website/index.html",
-    "main.b6ddb512.css.map": "/Filipiuk-developer-portfolio-website/static/css/main.b6ddb512.css.map",
+    "main.a40b7869.css.map": "/Filipiuk-developer-portfolio-website/static/css/main.a40b7869.css.map",
     "main.5ea148d9.js.map": "/Filipiuk-developer-portfolio-website/static/js/main.5ea148d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6ddb512.css",
+    "static/css/main.a40b7869.css",
     "static/js/main.5ea148d9.js"
   ]
 }
