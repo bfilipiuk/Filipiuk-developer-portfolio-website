@@ -130,21 +130,21 @@ const Page = () => {
             <span>+48 882 607 006</span>
             <div className="contact-info-icons">
               <a
-                href="https://www.google.com"
+                href="https://www.linkedin.com/in/bartłomiej-filipiuk-599304253/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src="LinkedIn_icon.svg" className="linkedin-icon" />             
               </a>
               <a
-                href="https://www.google.com"
+                href="https://github.com/bfilipiuk"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src="githubicon.svg" className="git-icon" />
               </a>
               <a
-                href="https://www.google.com"
+                href="https://www.behance.net/bartekfilipiuk"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -10,9 +10,9 @@ const Footer = () => {
             <span className="date">2024</span>
             <span className="footer-text">Made with love by Bartek Filipiuk </span>
             <div className="footer-icons">
-                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="/assets/LinkedIn_icon.svg" className="footer-linkedin-icon" /></a>
-                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="/assets/githubicon.svg" className="footer-git-icon" /></a>
-                <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src="/assets/behance-2.svg" className="footer-behance-icon" /></a>
+                <a href="https://www.linkedin.com/in/bartłomiej-filipiuk-599304253/" target="_blank" rel="noreferrer"><img src="LinkedIn_icon.svg" className="footer-linkedin-icon" /></a>
+                <a href="https://github.com/bfilipiuk" target="_blank" rel="noreferrer"><img src="githubicon.svg" className="footer-git-icon" /></a>
+                <a href="https://www.behance.net/bartekfilipiuk" target="_blank" rel="noreferrer"><img src="behance-2.svg" className="footer-behance-icon" /></a>
             </div>
         </div>
     );
