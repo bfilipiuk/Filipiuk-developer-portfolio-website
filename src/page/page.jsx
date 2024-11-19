@@ -76,7 +76,7 @@ const Page = () => {
               title="Tone of text detection web app"
               skills={["React", "AI", "API Integration"]}
               links={[
-                { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
+                { href: "https://github.com/bfilipiuk/Detecting-Emotional-Tone-of-Text", src: "githubicon.svg", alt: "GitHub Icon" }
               ]}
               href="https://github.com/bfilipiuk/Detecting-Emotional-Tone-of-Text"
             />
@@ -84,7 +84,7 @@ const Page = () => {
               title="Gaming platform website template"
               skills={["HTML", "CSS", "JavaScript"]}
               links={[
-                { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
+                { href: "https://github.com/bfilipiuk/Gaming-platform-website-template", src: "githubicon.svg", alt: "GitHub Icon" }
               ]}
               href="https://github.com/bfilipiuk/Gaming-platform-website-template"
             />
@@ -92,7 +92,7 @@ const Page = () => {
               title="Particle collisions engine"
               skills={["Java"]}
               links={[
-                { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
+                { href: "https://github.com/bfilipiuk/Particle-collisions", src: "githubicon.svg", alt: "GitHub Icon" }
               ]}
               href="https://github.com/bfilipiuk/Particle-collisions"
             />
@@ -100,7 +100,7 @@ const Page = () => {
               title="Arduino UDP tuple space communcation "
               skills={["C++", "Arduino", "Networks"]}
               links={[
-                { href: "https://github.com", src: "/assets/githubicon.svg", alt: "GitHub Icon" }
+                { href: "https://github.com/bfilipiuk/Arduino-UDP-tuple-space-communcation", src: "githubicon.svg", alt: "GitHub Icon" }
               ]}
               href="https://github.com/bfilipiuk/Arduino-UDP-tuple-space-communcation"
             />
@@ -108,7 +108,7 @@ const Page = () => {
               title="Solving physics problems with python"
               skills={["Python", "Jupyter Notebook"]}
               links={[
-                { href: "https://github.com", src: "logo192.png", alt: "FitHub Icon" }
+                { href: "https://github.com/bfilipiuk/Solving-quantum-physics-problems-with-python", src: "githubicon.svg", alt: "GitHub Icon" }
               ]}
               href="https://github.com/bfilipiuk/Solving-quantum-physics-problems-with-python"
             />
@@ -134,21 +134,21 @@ const Page = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/assets/LinkedIn_icon.svg" className="linkedin-icon" />             
+                <img src="LinkedIn_icon.svg" className="linkedin-icon" />             
               </a>
               <a
                 href="https://www.google.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/assets/githubicon.svg" className="git-icon" />
+                <img src="githubicon.svg" className="git-icon" />
               </a>
               <a
                 href="https://www.google.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/assets/behance-2.svg" className="behance-icon" />
+                <img src="behance-2.svg" className="behance-icon" />
               </a>
             </div>
           </div>
